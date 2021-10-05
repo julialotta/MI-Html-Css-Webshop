@@ -1,0 +1,25 @@
+{
+  "name": "gruppuppgift",
+  "version": "1.0.0",
+  "description": "Gruppuppgift MI - Skapa en webbshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julialotta/webbshop.git"
+  },
+  "keywords": [
+    "webbshop"
+  ],
+  "author": "Julia-Lotta Tinglöf, Charles Krook, Tobias Larsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julialotta/webbshop/issues"
+  },
+  "homepage": "https://github.com/julialotta/webbshop#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
