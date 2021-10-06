@@ -1,1 +1,18 @@
-{"version":3,"sourceRoot":"","sources":["../sass/main.scss"],"names":[],"mappings":"AAAA;EACE","file":"main.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_mixins.scss",
+        "../sass/_variables.scss",
+        "../sass/elements/_header.scss",
+        "../sass/elements/_footer.scss",
+        "../sass/elements/_navigation-1.scss",
+        "../sass/elements/_navigation-2.scss",
+        "../sass/elements/_hero.scss",
+        "../sass/elements/_filter.scss",
+        "../sass/elements/_feed.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
