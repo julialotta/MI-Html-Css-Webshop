@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
+header {
+  background-color: #f98b6d;
+}
+
+.burgermenu {
+  color: #422b29;
+}
+
 .nav-slim {
   display: flex;
   justify-content: center;
@@ -9,3 +17,11 @@
   color: black;
   text-decoration: none;
 }
+
+.hero-image {
+  height: 100%;
+  width: 100vw;
+  margin: -100px 0 10% 0;
+}
+
+/*# sourceMappingURL=main.css.map */
