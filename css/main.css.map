@@ -1,1 +1,23 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../sass/elements/_hero.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;EACA","file":"main.css"}
+=======
+{
+    "version": 3,
+    "mappings": "AGAA,OAAO,CAAC,6IAAI;ACAZ,AAAA,MAAM,CAAC;EACL,gBAAgB,EFaZ,OAAO;CEZZ;;AAED,AAAA,WAAW,CAAC;EACV,KAAK,EFMC,OAAO;CELd;;AGND,AAAA,SAAS,CAAC;EACR,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,ELEV,OAAO;EKDb,OAAO,EAAE,MAAM;CAShB;;AAbD,AAOM,SAPG,CAKP,EAAE,CACA,EAAE,CACA,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;CACtB;;ACVP,AAAA,WAAW,CAAC;EACV,gBAAgB,EAAE,2DAA2D;EAC7E,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,KAAK;CACvB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_mixins.scss",
+        "../sass/_variables.scss",
+        "../sass/_fonts.scss",
+        "../sass/elements/_header.scss",
+        "../sass/elements/_footer.scss",
+        "../sass/elements/_navigation-1.scss",
+        "../sass/elements/_navigation-2.scss",
+        "../sass/elements/_hero.scss",
+        "../sass/elements/_filter.scss",
+        "../sass/elements/_feed.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
+>>>>>>> bc2f59908293eacda5903bc8772d2f2475ef4b3e
