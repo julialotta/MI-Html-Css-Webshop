@@ -1,3 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
+.hero-image {
+  height: 100%;
+  width: 100vw;
+  margin: -100px 0 10% 0;
+}
 
 /*# sourceMappingURL=main.css.map */
