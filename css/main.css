@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
-<<<<<<< HEAD
-=======
 header {
   background-color: #f98b6d;
 }
@@ -9,7 +7,6 @@ header {
   color: #422b29;
 }
 
->>>>>>> bc2f59908293eacda5903bc8772d2f2475ef4b3e
 .nav-slim {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,14 +28,11 @@ header {
   height: 100vh;
   width: 100vw;
   background-size: cover;
-<<<<<<< HEAD
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .hero-image .hero-image-text {
   color: #ede6d6;
 }
-=======
-}
 /*# sourceMappingURL=main.css.map */
->>>>>>> bc2f59908293eacda5903bc8772d2f2475ef4b3e
