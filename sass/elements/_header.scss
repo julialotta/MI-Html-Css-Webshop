@@ -1,7 +1,65 @@
 header {
   background-color: $red;
-}
+  display: flex;
 
-.burgermenu {
-  color: $brown;
+  div,
+  label {
+    width: 100%;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .burger {
+    cursor: pointer;
+  }
+
+  .burgerline {
+    background-color: $brown;
+    display: block;
+    height: 0.25em;
+    width: 2em;
+    border-radius: 30px;
+    position: relative;
+    /* transition: background 0.2s ease-out; */
+  }
+  .burgerline:before,
+  .burgerline:after {
+    background-color: $brown;
+    content: "";
+    display: block;
+    height: 0.25em;
+    width: 2em;
+    border-radius: 30px;
+    position: absolute;
+    /*     transition: background 0.2s ease-out;
+ */
+  }
+
+  .burgerline:after {
+    top: 0.6em;
+  }
+
+  .burgerline:before {
+    top: -0.6em;
+  }
+
+  .logo {
+    a {
+      text-decoration: none;
+      color: $brown;
+    }
+    font-family: $japanfont;
+  }
+
+  i {
+    font-size: 25px;
+    padding-right: 20px;
+  }
+
+  .hover:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }

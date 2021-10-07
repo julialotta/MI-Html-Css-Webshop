@@ -10,31 +10,36 @@
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="py-3">
-      <div class="burgermenu">
-        <!-- Hamburgarmeny & Dropdownmeny -->
+    <header class="py-3 px-3 d-flex align-items-center">
+      <input class="checkbox" type="checkbox" id="checkbox">
+        <label class="burger p-2 d-flex justify-content-start" for="checkbox">
+          <span class="burgerline"></span>
+        </label>
+
+      <div class="logo d-flex justify-content-center hover">
+        <a href="#"><h1>ログ</h1></a>
       </div>
 
-      <div class="logo">
-        <img src="" alt="" />
-      </div>
-
-      <div>
-        <!-- Search-logo & Cart -->
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-search hover"></i>
+        <i class="bi bi-cart hover"></i>
       </div>
     </header>
 
     <section class="nav-slim">
       <nav class="navbar-expand">
         <ul class="navbar-nav">
-          <li class="px-4"><a href="#">Lorem</a></li>
-          <li class="px-4"><a href="#">Lorem</a></li>
-          <li class="px-4"><a href="#">Lorem</a></li>
-          <li class="px-4"><a href="#">Lorem</a></li>
+          <li class="px-5"><a href="#">Skålar</a></li>
+          <li class="px-5"><a href="#">Koppar</a></li>
+          <li class="px-5"><a href="#">Vaser</a></li>
+          <li class="px-5"><a href="#">Krukor</a></li>
         </ul>
       </nav>
     </section>
