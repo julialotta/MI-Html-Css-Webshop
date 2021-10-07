@@ -1,3 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
+.test {
+  background-color: blue;
+}
 
+.nav-slim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ede6d6;
+  padding: 10px 0;
+}
+
+.nav-slim ul {
+  display: inline;
+}
+
+.nav-slim ul li {
+  display: inline;
+  padding: 0 30px;
+}
+
+.nav-slim ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
 /*# sourceMappingURL=main.css.map */
