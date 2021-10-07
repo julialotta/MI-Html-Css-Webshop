@@ -56,9 +56,12 @@ header .hover:hover {
   justify-content: center;
   background-color: #ede6d6;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
 }
 .nav-slim ul li a {
   color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 

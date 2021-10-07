@@ -3,10 +3,13 @@
   justify-content: center;
   background-color: $beige;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
   ul {
     li {
       a {
         color: black;
+        font-weight: bold;
         text-decoration: none;
       }
     }
