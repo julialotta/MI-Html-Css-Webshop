@@ -86,11 +86,18 @@ header .hover:hover {
 .background-image {
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
-  height: 200vh;
+  height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center center;
 }
 .background-image .cups img {
   width: 100%;
+  border-radius: 20%;
+  box-shadow: #f98b6d 5px 5px 0px 2px;
+}
+.background-image .cups .addtobag {
+  height: 20px;
+  width: 40px;
+  background-color: blue;
 }
