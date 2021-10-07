@@ -1,23 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
 header {
   background-color: #f98b6d;
+  display: flex;
 }
 
-.burgermenu {
-  color: #422b29;
+.checkbox {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.burgerline {
+  background-color: #422b29;
+  display: block;
+  height: 0.25em;
+  width: 1.9em;
+  border-radius: 30px;
+  position: relative;
+  /* transition: background 0.2s ease-out; */
+}
+
+.burgerline:before,
+.burgerline:after {
+  background-color: #422b29;
+  content: "";
+  display: block;
+  height: 0.25em;
+  width: 1.9em;
+  border-radius: 30px;
+  position: absolute;
+  /*     transition: background 0.2s ease-out;
+  */
+}
+
+.burgerline:after {
+  top: 0.6em;
+}
+
+.burgerline:before {
+  top: -0.6em;
 }
 
 .nav-slim {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #ede6d6;
   padding: 10px 0;
 }
-
 .nav-slim ul li a {
   color: black;
   text-decoration: none;
@@ -35,4 +66,9 @@ header {
 .hero-image .hero-image-text {
   color: #ede6d6;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
+=======
+
+/*# sourceMappingURL=main.css.map */
+>>>>>>> a72a81f422f376e9bfa342cdc961a4df86359d64
