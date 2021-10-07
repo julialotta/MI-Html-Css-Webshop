@@ -17,7 +17,7 @@ header .burgerline {
   background-color: #422b29;
   display: block;
   height: 0.25em;
-  width: 1.9em;
+  width: 2em;
   border-radius: 30px;
   position: relative;
   /* transition: background 0.2s ease-out; */
@@ -28,7 +28,7 @@ header .burgerline:after {
   content: "";
   display: block;
   height: 0.25em;
-  width: 1.9em;
+  width: 2em;
   border-radius: 30px;
   position: absolute;
   /*     transition: background 0.2s ease-out;
@@ -43,12 +43,17 @@ header .burgerline:before {
 header .logo {
   font-family: "Noto Serif JP", serif;
 }
+header .logo a {
+  text-decoration: none;
+  color: #422b29;
+}
 header i {
-  font-size: 35px;
-  padding-right: 5px;
+  font-size: 25px;
+  padding-right: 20px;
 }
 header .hover:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .nav-slim {
