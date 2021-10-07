@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
 header {
   background-color: #f98b6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header div,
 header label {
   width: 100%;
 }
+
 header .checkbox {
   display: none;
 }
+
 header .burger {
   cursor: pointer;
 }
+
 header .burgerline {
   background-color: #422b29;
   display: block;
@@ -22,6 +28,7 @@ header .burgerline {
   position: relative;
   /* transition: background 0.2s ease-out; */
 }
+
 header .burgerline:before,
 header .burgerline:after {
   background-color: #422b29;
@@ -32,38 +39,51 @@ header .burgerline:after {
   border-radius: 30px;
   position: absolute;
   /*     transition: background 0.2s ease-out;
-  */
+ */
 }
+
 header .burgerline:after {
   top: 0.6em;
 }
+
 header .burgerline:before {
   top: -0.6em;
 }
+
 header .logo {
   font-family: "Noto Serif JP", serif;
 }
+
 header .logo a {
   text-decoration: none;
   color: #422b29;
 }
+
 header i {
   font-size: 25px;
   padding-right: 20px;
 }
+
 header .hover:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .nav-slim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ede6d6;
   padding: 10px 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
+
 .nav-slim ul li a {
   color: black;
   font-weight: bold;
@@ -72,27 +92,35 @@ header .hover:hover {
 
 .hero-image {
   background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .hero-image .hero-image-text > h2 {
   color: #ede6d6;
   text-align: center;
 }
 
 .background-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> dcc539e153ecf98a635574cb0ab522ec5352df7f
   background-size: cover;
   background-repeat: repeat-y;
   background-position: center center;
 }
+
 .background-image .cups img {
   width: 100%;
+<<<<<<< HEAD
   border-radius: 20%;
   box-shadow: #f98b6d 5px 5px 0px 2px;
 }
@@ -101,3 +129,7 @@ header .hover:hover {
   width: 40px;
   background-color: blue;
 }
+=======
+}
+/*# sourceMappingURL=main.css.map */
+>>>>>>> dcc539e153ecf98a635574cb0ab522ec5352df7f
