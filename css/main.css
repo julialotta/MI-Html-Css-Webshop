@@ -70,68 +70,6 @@ header .hover:hover {
           transform: scale(1.1);
 }
 
-/* -- Slideout Sidebar -- */
-.slideout-sidebar {
-  position: fixed;
-  top: 0;
-  left: -190px;
-  z-index: 0;
-  width: 150px;
-  height: 100%;
-  padding: 20px;
-  background-color: #212121;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-/* -- Slideout Sidebar -- */
-.slideout-sidebar {
-  position: fixed;
-  top: 0;
-  left: -190px;
-  z-index: 0;
-  width: 150px;
-  height: 100%;
-  padding: 20px;
-  background-color: #212121;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.slideout-sidebar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.slideout-sidebar ul li {
-  cursor: pointer;
-  padding: 18px 0;
-  border-bottom: 1px solid rgba(244, 244, 244, 0.4);
-  color: rgba(244, 244, 244, 0.7);
-}
-
-.slideout-sidebar ul li:last-child {
-  border-bottom: 0;
-}
-
-.slideout-sidebar ul li:hover {
-  color: #f4f4f4;
-}
-
-/*-- The Magic --*/
-#checkbox:checked ~ .slideout-sidebar {
-  left: 0px;
-}
-
-#checkbox:checked + .menu-icon {
-  left: 210px;
-}
-
-#checkbox:checked ~ .content-container {
-  padding-left: 190px;
-}
-
 .nav-slim {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,7 +109,6 @@ header .hover:hover {
   display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
-  height: 200vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -180,9 +117,4 @@ header .hover:hover {
 .background-image .cups img {
   width: 100%;
 }
-<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
-=======
-
-/*# sourceMappingURL=main.css.map */
->>>>>>> 9c8df8cb1b855f5318eab3898a2be349de5a54b9
