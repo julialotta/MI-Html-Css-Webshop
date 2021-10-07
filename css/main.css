@@ -3,16 +3,17 @@ header {
   background-color: #f98b6d;
   display: flex;
 }
-
-.checkbox {
+header div,
+header label {
+  width: 100%;
+}
+header .checkbox {
   display: none;
 }
-
-.burger {
+header .burger {
   cursor: pointer;
 }
-
-.burgerline {
+header .burgerline {
   background-color: #422b29;
   display: block;
   height: 0.25em;
@@ -21,9 +22,8 @@ header {
   position: relative;
   /* transition: background 0.2s ease-out; */
 }
-
-.burgerline:before,
-.burgerline:after {
+header .burgerline:before,
+header .burgerline:after {
   background-color: #422b29;
   content: "";
   display: block;
@@ -34,13 +34,21 @@ header {
   /*     transition: background 0.2s ease-out;
   */
 }
-
-.burgerline:after {
+header .burgerline:after {
   top: 0.6em;
 }
-
-.burgerline:before {
+header .burgerline:before {
   top: -0.6em;
+}
+header .logo {
+  font-family: "Noto Serif JP", serif;
+}
+header i {
+  font-size: 35px;
+  padding-right: 5px;
+}
+header .hover:hover {
+  cursor: pointer;
 }
 
 .nav-slim {

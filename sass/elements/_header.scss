@@ -1,41 +1,60 @@
 header {
   background-color: $red;
   display: flex;
-}
-.checkbox {
-  display: none;
-}
 
-.burger {
-  cursor: pointer;
-}
+  div,
+  label {
+    width: 100%;
+  }
 
-.burgerline {
-  background-color: $brown;
-  display: block;
-  height: 0.25em;
-  width: 1.9em;
-  border-radius: 30px;
-  position: relative;
-  /* transition: background 0.2s ease-out; */
-}
-.burgerline:before,
-.burgerline:after {
-  background-color: $brown;
-  content: "";
-  display: block;
-  height: 0.25em;
-  width: 1.9em;
-  border-radius: 30px;
-  position: absolute;
-  /*     transition: background 0.2s ease-out;
+  .checkbox {
+    display: none;
+  }
+
+  .burger {
+    cursor: pointer;
+  }
+
+  .burgerline {
+    background-color: $brown;
+    display: block;
+    height: 0.25em;
+    width: 1.9em;
+    border-radius: 30px;
+    position: relative;
+    /* transition: background 0.2s ease-out; */
+  }
+  .burgerline:before,
+  .burgerline:after {
+    background-color: $brown;
+    content: "";
+    display: block;
+    height: 0.25em;
+    width: 1.9em;
+    border-radius: 30px;
+    position: absolute;
+    /*     transition: background 0.2s ease-out;
  */
-}
+  }
 
-.burgerline:after {
-  top: 0.6em;
-}
+  .burgerline:after {
+    top: 0.6em;
+  }
 
-.burgerline:before {
-  top: -0.6em;
+  .burgerline:before {
+    top: -0.6em;
+  }
+
+  .logo {
+    font-family: $japanfont;
+  }
+
+  i {
+    font-size: 35px;
+    padding-right: 5px;
+  }
+
+  .hover:hover {
+    cursor: pointer;
+  }
 }
