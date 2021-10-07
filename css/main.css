@@ -83,7 +83,6 @@ header .hover:hover {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .background-image {
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
@@ -95,6 +94,3 @@ header .hover:hover {
 .background-image .cups img {
   width: 100%;
 }
-=======
-/*# sourceMappingURL=main.css.map */
->>>>>>> dc848d08537829ee0a119787321eac3c7a55edb5
