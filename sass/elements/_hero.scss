@@ -1,6 +1,13 @@
+@import "../mixins";
+
 .hero-image {
   background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .hero-image-text {
+    color: $beige;
+  }
 }
