@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
-<<<<<<< HEAD
-=======
 header {
   background-color: #f98b6d;
 }
@@ -9,7 +7,6 @@ header {
   color: #422b29;
 }
 
->>>>>>> a652eba77f5382ef7e252cbb2a3c3680cca157d0
 .nav-slim {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,9 +29,4 @@ header {
   width: 100vw;
   background-size: cover;
 }
-<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
-=======
-
-/*# sourceMappingURL=main.css.map */
->>>>>>> a652eba77f5382ef7e252cbb2a3c3680cca157d0
