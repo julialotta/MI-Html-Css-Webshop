@@ -108,12 +108,15 @@ header .hover:hover {
   width: 100%;
   border-radius: 20%;
   box-shadow: #f98b6d 5px 5px 0px 2px;
-  transition: transform 0.2s;
+  transition: transform 0.1s;
 }
-
-.cups:hover img {
+.background-image .cups:hover {
   transform: scale(1.02);
   border-radius: 20%;
   opacity: 0.9;
-  z-index: -50;
+}
+
+h2 {
+  color: #422b29;
+  text-align: center;
 }
