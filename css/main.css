@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+.hero-image {
+  background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
+=======
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
 .nav-slim {
   display: -webkit-box;
@@ -14,6 +24,7 @@
   color: black;
   text-decoration: none;
 }
+<<<<<<< HEAD
 
 .hero-image {
   height: 100%;
@@ -21,3 +32,6 @@
   margin: -100px 0 10% 0;
 }
 /*# sourceMappingURL=main.css.map */
+=======
+>>>>>>> 9225da70843d52d1b68f740cd85b407839141063
+>>>>>>> 82885b9aa7ee78494412e55fc4df2ac5569e5d66

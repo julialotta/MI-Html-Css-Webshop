@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": 3,
     "mappings": "AGAA,OAAO,CAAC,6IAAI;AIAZ,AAAA,SAAS,CAAC;EACR,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,ELEV,OAAO;EKDb,OAAO,EAAE,MAAM;CAShB;;AAbD,AAOM,SAPG,CAKP,EAAE,CACA,EAAE,CACA,CAAC,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,eAAe,EAAE,IAAI;CACtB;;ACVP,AAAA,WAAW,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,cAAc;CACvB",
@@ -17,3 +18,6 @@
     "names": [],
     "file": "main.css"
 }
+=======
+{"version":3,"sourceRoot":"","sources":["../sass/elements/_hero.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA","file":"main.css"}
+>>>>>>> 82885b9aa7ee78494412e55fc4df2ac5569e5d66
