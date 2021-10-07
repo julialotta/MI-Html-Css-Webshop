@@ -108,6 +108,12 @@ header .hover:hover {
   width: 100%;
   border-radius: 20%;
   box-shadow: #f98b6d 5px 5px 0px 2px;
+  transition: transform 0.2s;
 }
 
-/*# sourceMappingURL=main.css.map */
+.cups:hover img {
+  transform: scale(1.02);
+  border-radius: 20%;
+  opacity: 0.9;
+  z-index: -50;
+}

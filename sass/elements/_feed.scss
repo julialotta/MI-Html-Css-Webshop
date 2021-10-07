@@ -12,6 +12,14 @@
       width: 100%;
       border-radius: 20%;
       box-shadow: $red 5px 5px 0px 2px;
+
+      transition: transform 0.2s;
     }
   }
+}
+
+.cups:hover {
+  transform: scale(1.02);
+  border-radius: 20%;
+  opacity: 0.9;
 }
