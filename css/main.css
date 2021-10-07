@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
 header {
   background-color: #f98b6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header div,
 header label {
   width: 100%;
 }
+
 header .checkbox {
   display: none;
 }
+
 header .burger {
   cursor: pointer;
 }
+
 header .burgerline {
   background-color: #422b29;
   display: block;
@@ -22,6 +28,7 @@ header .burgerline {
   position: relative;
   /* transition: background 0.2s ease-out; */
 }
+
 header .burgerline:before,
 header .burgerline:after {
   background-color: #422b29;
@@ -32,38 +39,113 @@ header .burgerline:after {
   border-radius: 30px;
   position: absolute;
   /*     transition: background 0.2s ease-out;
-  */
+ */
 }
+
 header .burgerline:after {
   top: 0.6em;
 }
+
 header .burgerline:before {
   top: -0.6em;
 }
+
 header .logo {
   font-family: "Noto Serif JP", serif;
 }
+
 header .logo a {
   text-decoration: none;
   color: #422b29;
 }
+
 header i {
   font-size: 25px;
   padding-right: 20px;
 }
+
 header .hover:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* -- Slideout Sidebar -- */
+.slideout-sidebar {
+  position: fixed;
+  top: 0;
+  left: -190px;
+  z-index: 0;
+  width: 150px;
+  height: 100%;
+  padding: 20px;
+  background-color: #212121;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+/* -- Slideout Sidebar -- */
+.slideout-sidebar {
+  position: fixed;
+  top: 0;
+  left: -190px;
+  z-index: 0;
+  width: 150px;
+  height: 100%;
+  padding: 20px;
+  background-color: #212121;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.slideout-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideout-sidebar ul li {
+  cursor: pointer;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(244, 244, 244, 0.4);
+  color: rgba(244, 244, 244, 0.7);
+}
+
+.slideout-sidebar ul li:last-child {
+  border-bottom: 0;
+}
+
+.slideout-sidebar ul li:hover {
+  color: #f4f4f4;
+}
+
+/*-- The Magic --*/
+#checkbox:checked ~ .slideout-sidebar {
+  left: 0px;
+}
+
+#checkbox:checked + .menu-icon {
+  left: 210px;
+}
+
+#checkbox:checked ~ .content-container {
+  padding-left: 190px;
 }
 
 .nav-slim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ede6d6;
   padding: 10px 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
+
 .nav-slim ul li a {
   color: black;
   font-weight: bold;
@@ -78,12 +160,15 @@ header .hover:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .hero-image .hero-image-text > h2 {
   color: #ede6d6;
   text-align: center;
 }
 
 .background-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
   height: 200vh;
@@ -91,6 +176,8 @@ header .hover:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .background-image .cups img {
   width: 100%;
 }
+/*# sourceMappingURL=main.css.map */
