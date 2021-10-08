@@ -1,0 +1,11 @@
+.filter-list {
+  list-style-type: none;
+  li {
+    p {
+      margin: 0;
+    }
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #333;
+  }
+}
