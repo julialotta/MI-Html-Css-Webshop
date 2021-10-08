@@ -18,35 +18,33 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="py-1 px-3 d-flex align-items-center">
-      <div class="burger justify-content-start d-md-none">
-        <input class="checkbox" type="checkbox" id="checkbox" />
+    <header id="hem" class="py-1 px-3 d-flex align-items-center">
+      <div class="justify-content-start d-md-none">
+        <input class="checkbox" type="checkbox" id="checkbox"/>
         <label class="burger" for="checkbox">
           <span class="burgerline"></span>
         </label>
       </div>
 
-      <div class="logo justify-content-md-start justify-content-center d-flex">
-        <a class="justify-content-center" href="#">
-          <h1 class="hover">ログ</h1>
-        </a>
-      </div>
-
+    <div class="logo justify-content-md-start justify-content-center d-flex">
+      <a class="justify-content-center" href="#hem">
+        <h1 class="hover">ログ</h1>
+      </a>
+    </div>
+    
       <div class="d-flex justify-content-end">
         <i class="bi bi-search hover"></i>
         <i class="bi bi-cart hover"></i>
       </div>
     </header>
 
-    <section
-      class="nav-slim d-md-flex d-sm-none justify-content-center burgermenu"
-    >
+    <section class="nav-slim">
       <nav class="navbar-expand">
-        <ul class="navbar-nav">
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Om oss</a></li>
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Koppar</a></li>
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Vaser</a></li>
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Krukor</a></li>
+        <ul class="navbar-nav burgermenu">
+          <li class="px-2 px-md-4 px-lg-5"><a href="#hem">Hem</a></li>
+          <li class="px-2 px-md-4 px-lg-5"><a href="#produkter">Nyheter</a></li>
+          <li class="px-2 px-md-4 px-lg-5"><a href="#produkter">Produkter</a></li>
+          <li class="px-2 px-md-4 px-lg-5"><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
     </section>
@@ -100,7 +98,7 @@
               </li>
             </ul>
           </aside>
-          <main class="col-12 col-md-9">
+          <main id="produkter" class="col-12 col-md-9">
             <div class="d-flex justify-content-between">
               <div><p>12 produkter</p></div>
               <div class="align-self-end">
@@ -192,7 +190,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="kontakt">
       <div class="footer-background">
         <div class="container py-4">
           <div class="row">
