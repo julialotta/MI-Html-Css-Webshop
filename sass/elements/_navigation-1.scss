@@ -1,15 +1,27 @@
 .nav-slim {
   background-color: $beige;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  /*  position: absolute;
+  top: 20px;
+  display: flex;
+  flex-direction: column; */
 
+  @include for-tablet-landscape-up {
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    max-height: 5em;
+    display: flex;
+    align-items: center;
+  }
+}
+.nav-slim {
   ul {
     li {
       a {
         color: $brown;
-        font-weight: bold;
         text-decoration: none;
       }
     }
