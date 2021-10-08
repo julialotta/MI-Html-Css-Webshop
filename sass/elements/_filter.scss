@@ -1,5 +1,6 @@
 .filter-list {
   list-style-type: none;
+  padding: 0;
   li {
     p {
       margin: 0;
@@ -7,5 +8,8 @@
     padding-bottom: 1em;
     margin-bottom: 1em;
     border-bottom: 1px solid #333;
+  }
+  @include for-tablet-landscape-up {
+    display: none;
   }
 }
