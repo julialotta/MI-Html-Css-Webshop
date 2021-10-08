@@ -72,10 +72,25 @@ header .hover:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: #422b29 0 0 5px 0;
 }
 .nav-slim ul li a {
   color: #422b29;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-slim {
+  display: flex;
+  justify-content: center;
+  background-color: #ede6d6;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: #422b29 0 0 5px 0;
+}
+.nav-slim ul li a {
+  color: black;
   font-weight: bold;
   text-decoration: none;
 }
@@ -141,4 +156,5 @@ header .hover:hover {
 h2 {
   color: #422b29;
   text-align: center;
+  text-shadow: -3px 3px 6px #ede6d6;
 }
