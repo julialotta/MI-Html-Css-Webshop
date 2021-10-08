@@ -1,6 +1,5 @@
 header {
   background-color: $brown;
-  display: flex;
   height: 50px;
 
   div,
@@ -14,10 +13,6 @@ header {
 
   .burger {
     cursor: pointer;
-
-    @include for-desktop-up {
-      display: none;
-    }
   }
 
   .burgerline {
@@ -52,11 +47,9 @@ header {
   }
 
   .logo {
-    justify-content: center;
-    font-family: $japanfont;
-
-    @include for-desktop-up {
-      justify-content: flex-start;
+    h1 {
+      font-family: $japanfont;
+      font-size: 28px;
     }
 
     a {
@@ -73,6 +66,6 @@ header {
 
   .hover:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
