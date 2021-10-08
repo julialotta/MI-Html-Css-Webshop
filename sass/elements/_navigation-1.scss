@@ -1,0 +1,17 @@
+.nav-slim {
+  background-color: $beige;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  ul {
+    li {
+      a {
+        color: $brown;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
