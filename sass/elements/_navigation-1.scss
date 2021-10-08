@@ -1,29 +1,39 @@
-.nav-slim {
-  background-color: $beige;
+.menu {
+  background-color: beige;
+  display: flex;
+  position: relative;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-  /*  position: absolute;
-  top: 20px;
-  display: flex;
-  flex-direction: column; */
+  top: 40px;
+  justify-content: center;
 
-  @include for-tablet-landscape-up {
-    align-items: center;
-    justify-content: center;
-    height: 2em;
-    max-height: 5em;
-    display: flex;
-    align-items: center;
+  a {
+    color: $brown;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
   }
 }
-.nav-slim {
-  ul {
-    li {
-      a {
-        color: $brown;
-        text-decoration: none;
-      }
-    }
-  }
+
+.checkbox:checked ~ .menu {
+  max-height: 5em;
+}
+
+.checkbox:checked:checked ~ .burger-icon .burgerline {
+  background: transparent;
+}
+
+.checkbox:checked ~ .burger-icon .burgerline:before {
+  transform: rotate(135deg);
+}
+
+.checkbox:checked ~ .burger-icon .burgerline:after {
+  transform: rotate(-135deg);
+}
+
+.checkbox:checked ~ .burger-icon:not(.steps) .burgerline:before,
+.checkbox:checked ~ .burger-icon:not(.steps) .burgerline:after {
+  top: 0;
 }
