@@ -111,6 +111,7 @@ header .hover:hover {
 
 .filter-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .filter-list li {
@@ -121,6 +122,12 @@ header .hover:hover {
 
 .filter-list li p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .filter-list {
+    display: none;
+  }
 }
 
 .background-image {
