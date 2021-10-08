@@ -63,6 +63,14 @@ header .hover:hover {
   color: #ede6d6;
 }
 
+.burgermenu {
+  font-family: "Josefin Sans", sans-serif;
+  display: none;
+}
+.burgermenu nav li a {
+  color: #422b29;
+}
+
 .nav-slim {
   display: flex;
   justify-content: center;

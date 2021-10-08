@@ -1,0 +1,11 @@
+.burgermenu {
+  font-family: $primary-font;
+  display: none;
+  nav {
+    li {
+      a {
+        color: $brown;
+      }
+    }
+  }
+}
