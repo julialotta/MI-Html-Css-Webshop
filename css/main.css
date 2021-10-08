@@ -1,9 +1,8 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
 header {
   background-color: #422b29;
   display: flex;
-  height: 60px;
+  height: 50px;
 }
 header div,
 header label {
@@ -15,26 +14,25 @@ header .checkbox {
 header .burger {
   cursor: pointer;
 }
+@media (min-width: 1200px) {
+  header .burger {
+    display: none;
+  }
+}
 header .burgerline {
   background-color: #f98b6d;
-  display: block;
+  /*    display: block; */
   height: 0.25em;
   width: 2em;
   border-radius: 30px;
   position: relative;
-  /* transition: background 0.2s ease-out; */
-  /* Borde ligga på classen .burger men det funkar inte */
-}
-@media (min-width: 1200px) {
-  header .burgerline {
-    display: none;
-  }
 }
 header .burgerline:before,
 header .burgerline:after {
   background-color: #f98b6d;
   content: "";
-  display: block;
+  /*     display: block;
+  */
   height: 0.25em;
   width: 2em;
   border-radius: 30px;
@@ -51,9 +49,11 @@ header .burgerline:before {
 header .logo {
   justify-content: center;
   font-family: "Noto Serif JP", serif;
-  /* @include for-desktop-up {
-    justify-content: start;
-  } */
+}
+@media (min-width: 1200px) {
+  header .logo {
+    justify-content: flex-start;
+  }
 }
 header .logo a {
   text-decoration: none;
@@ -120,3 +120,5 @@ h2 {
   color: #422b29;
   text-align: center;
 }
+
+/*# sourceMappingURL=main.css.map */

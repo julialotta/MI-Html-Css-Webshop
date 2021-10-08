@@ -1,7 +1,7 @@
 header {
   background-color: $brown;
   display: flex;
-  height: 60px;
+  height: 50px;
 
   div,
   label {
@@ -14,27 +14,27 @@ header {
 
   .burger {
     cursor: pointer;
-  }
 
-  .burgerline {
-    background-color: $red;
-    display: block;
-    height: 0.25em;
-    width: 2em;
-    border-radius: 30px;
-    position: relative;
-    /* transition: background 0.2s ease-out; */
-
-    /* Borde ligga på classen .burger men det funkar inte */
     @include for-desktop-up {
       display: none;
     }
   }
+
+  .burgerline {
+    background-color: $red;
+    /*    display: block; */
+    height: 0.25em;
+    width: 2em;
+    border-radius: 30px;
+    position: relative;
+  }
+
   .burgerline:before,
   .burgerline:after {
     background-color: $red;
     content: "";
-    display: block;
+    /*     display: block;
+ */
     height: 0.25em;
     width: 2em;
     border-radius: 30px;
@@ -55,9 +55,9 @@ header {
     justify-content: center;
     font-family: $japanfont;
 
-    /* @include for-desktop-up {
-      justify-content: start;
-    } */
+    @include for-desktop-up {
+      justify-content: flex-start;
+    }
 
     a {
       text-decoration: none;
