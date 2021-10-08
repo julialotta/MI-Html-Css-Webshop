@@ -3,7 +3,6 @@ header {
   background-color: #422b29;
   height: 50px;
 }
-header div,
 header label {
   width: 100%;
 }
@@ -117,6 +116,7 @@ header .hover:hover {
 h2 {
   color: #422b29;
   text-align: center;
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 >>>>>>> 06627cee2e537a052a85bb7d81a174761acbe14d
@@ -124,3 +124,6 @@ h2 {
 
 /*# sourceMappingURL=main.css.map */
 >>>>>>> 022523cb8b834c8fe53b3a8a4c929d41c36b2302
+=======
+}
+>>>>>>> c5169bf0f82e8c4139d0847c05d3998440c110ea
