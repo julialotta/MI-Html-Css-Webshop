@@ -3,6 +3,7 @@ header {
   background-color: #422b29;
   height: 50px;
   width: 100%;
+  box-shadow: black 10px 10px 10px 10px;
 }
 header label,
 header div {
@@ -71,6 +72,7 @@ header .hover:hover {
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: #422b29 0 0 10px 0;
 }
 .nav-slim ul li a {
   color: black;
@@ -126,5 +128,3 @@ h2 {
   color: #422b29;
   text-align: center;
 }
-
-/*# sourceMappingURL=main.css.map */
