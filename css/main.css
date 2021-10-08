@@ -2,8 +2,6 @@
 header {
   background-color: #422b29;
   height: 50px;
-  width: 100%;
-  box-shadow: black 10px 10px 10px 10px;
 }
 header label,
 header div {
@@ -72,7 +70,7 @@ header .hover:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: #422b29 0 0 10px 0;
+  box-shadow: #422b29 0 0 5px 0;
 }
 .nav-slim ul li a {
   color: black;
@@ -82,15 +80,23 @@ header .hover:hover {
 
 .hero-image {
   background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.hero-image .hero-image-text > h2 {
+.hero-image .hero-image-text {
   color: #ede6d6;
-  text-align: center;
+  text-align: right;
+  padding: 75px 75px 150px 50px;
+  font-size: 4em;
+}
+.hero-image .hero-image-text h1 {
+  text-shadow: 5px 5px 10px #422b29;
+}
+.hero-image .hero-image-text p {
+  text-shadow: 5px 5px 10px #422b29;
 }
 
 .filter-list {
@@ -105,7 +111,6 @@ header .hover:hover {
 .filter-list li p {
   margin: 0;
 }
-
 @media (max-width: 768px) {
   .filter-list {
     display: none;

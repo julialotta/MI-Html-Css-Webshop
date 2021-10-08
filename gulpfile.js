@@ -9,7 +9,7 @@ gulp.task("compile", function () {
 
 
 gulp.task("watch-sass", function () {
-    gulp.watch("sass/main.scss", gulp.series("compile"));
+    gulp.watch("sass/**/*.scss", gulp.series("compile"));
 });
 
 gulp.task ("default", gulp.series("compile", "watch-sass"), function () {});

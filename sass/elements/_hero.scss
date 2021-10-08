@@ -2,13 +2,22 @@
 
 .hero-image {
   background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  .hero-image-text > h2 {
+  .hero-image-text {
     color: $beige;
-    text-align: center;
+    text-align: right;
+    padding: 75px 75px 150px 50px;
+    font-size: 4em;
+
+    h1 {
+      text-shadow: 5px 5px 10px $brown;
+    }
+    p {
+      text-shadow: 5px 5px 10px $brown;
+    }
   }
 }
