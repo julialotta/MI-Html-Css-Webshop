@@ -3,15 +3,19 @@ header {
   background-color: #422b29;
   height: 50px;
 }
+
 header label {
   width: 100%;
 }
+
 header .checkbox {
   display: none;
 }
+
 header .burger {
   cursor: pointer;
 }
+
 header .burgerline {
   background-color: #f98b6d;
   /*    display: block; */
@@ -20,41 +24,49 @@ header .burgerline {
   border-radius: 30px;
   position: relative;
 }
+
 header .burgerline:before,
 header .burgerline:after {
   background-color: #f98b6d;
   content: "";
   /*     display: block;
-  */
+ */
   height: 0.25em;
   width: 2em;
   border-radius: 30px;
   position: absolute;
   /*     transition: background 0.2s ease-out;
-  */
+ */
 }
+
 header .burgerline:after {
   top: 0.6em;
 }
+
 header .burgerline:before {
   top: -0.6em;
 }
+
 header .logo h1 {
   font-family: "Noto Serif JP", serif;
   font-size: 28px;
 }
+
 header .logo a {
   text-decoration: none;
   color: #f98b6d;
 }
+
 header i {
   color: #f98b6d;
   font-size: 25px;
   padding-right: 20px;
 }
+
 header .hover:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .footer-background {
@@ -63,14 +75,20 @@ header .hover:hover {
 }
 
 .nav-slim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ede6d6;
   padding: 10px 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
 }
+
 .nav-slim ul li a {
   color: black;
   font-weight: bold;
@@ -85,12 +103,29 @@ header .hover:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .hero-image .hero-image-text > h2 {
   color: #ede6d6;
   text-align: center;
 }
 
+.filter-list {
+  list-style-type: none;
+}
+
+.filter-list li {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333;
+}
+
+.filter-list li p {
+  margin: 0;
+}
+
 .background-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
   height: 100%;
@@ -98,14 +133,21 @@ header .hover:hover {
   background-repeat: repeat-y;
   background-position: center center;
 }
+
 .background-image .cups img {
   width: 100%;
   border-radius: 20%;
-  box-shadow: #f98b6d 5px 5px 0px 2px;
+  -webkit-box-shadow: #f98b6d 5px 5px 0px 2px;
+          box-shadow: #f98b6d 5px 5px 0px 2px;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
 }
+
 .background-image .cups:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
   border-radius: 20%;
 }
 
@@ -113,3 +155,4 @@ h2 {
   color: #422b29;
   text-align: center;
 }
+/*# sourceMappingURL=main.css.map */
