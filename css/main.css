@@ -2,8 +2,10 @@
 header {
   background-color: #422b29;
   height: 50px;
+  width: 100%;
 }
-header label {
+header label,
+header div {
   width: 100%;
 }
 header .checkbox {
@@ -14,7 +16,7 @@ header .burger {
 }
 header .burgerline {
   background-color: #f98b6d;
-  /*    display: block; */
+  display: block;
   height: 0.25em;
   width: 2em;
   border-radius: 30px;
@@ -24,8 +26,7 @@ header .burgerline:before,
 header .burgerline:after {
   background-color: #f98b6d;
   content: "";
-  /*     display: block;
-  */
+  display: block;
   height: 0.25em;
   width: 2em;
   border-radius: 30px;
@@ -108,3 +109,5 @@ h2 {
   color: #422b29;
   text-align: center;
 }
+
+/*# sourceMappingURL=main.css.map */
