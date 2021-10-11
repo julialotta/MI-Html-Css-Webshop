@@ -108,7 +108,7 @@ header .checkbox {
   background-color: #ede6d6;
   z-index: 2;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .menu {
     max-height: 40px;
   }
@@ -159,7 +159,7 @@ a:hover {
   top: 0;
   padding-top: 40px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .filter-wrap h3 {
     background-color: white;
     padding: 10px 0;
@@ -174,7 +174,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .filter-list {
     display: none;
   }
