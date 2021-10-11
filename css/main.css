@@ -5,51 +5,14 @@
 
 header {
   background-color: #422b29;
-  height: 50px;
-  position: absolute;
-  width: 100%;
-}
-header label,
-header div {
-  width: 100%;
-}
-header label section,
-header div section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .checkbox {
-  display: none;
-}
-header .burger {
-  cursor: pointer;
-}
-header .burgerline {
-  background-color: #f98b6d;
-  display: block;
-  height: 0.25em;
-  width: 2em;
-  border-radius: 30px;
   position: relative;
-  transition: all 0.2s ease-out;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
 }
-header .burgerline:before,
-header .burgerline:after {
-  background-color: #f98b6d;
-  content: "";
-  display: block;
-  height: 0.25em;
-  width: 2em;
-  border-radius: 30px;
-  position: absolute;
-  transition: all 0.2s ease-out;
-}
-header .burgerline:after {
-  top: 0.6em;
-}
-header .burgerline:before {
-  top: -0.6em;
+header div,
+header label {
+  width: 100%;
 }
 header .logo h1 {
   font-family: "Noto Serif JP", serif;
@@ -59,30 +22,15 @@ header .logo a {
   text-decoration: none;
   color: #f98b6d;
 }
-header i {
-  color: #f98b6d;
-  font-size: 25px;
-  padding-right: 20px;
-}
 header .hover:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
-header .checkbox:checked ~ .navbar-nav {
-  max-height: 5em;
-}
-header .checkbox:checked:checked ~ .burger .burgerline {
-  background: transparent;
-}
-header .checkbox:checked ~ .burger .burgerline:before {
-  transform: rotate(135deg);
-}
-header .checkbox:checked ~ .burger .burgerline:after {
-  transform: rotate(-135deg);
-}
-header .checkbox:checked ~ .burger:not(.steps) .burgerline:before,
-header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
-  top: 0;
+
+i {
+  color: #f98b6d;
+  font-size: 25px;
+  padding-right: 20px;
 }
 
 .footer-background {
@@ -90,59 +38,94 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   color: #ede6d6;
 }
 
-.menu {
-  background-color: beige;
-  display: flex;
+header .burger {
+  cursor: pointer;
+  padding: 28px 20px;
+}
+header .burger .burgerline {
+  background: #f98b6d;
+  display: block;
+  height: 2px;
   position: relative;
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  top: 40px;
-  justify-content: center;
+  transition: background 0.2s ease-out;
+  width: 25px;
 }
-.menu a {
-  color: #422b29;
-  text-decoration: none;
+
+header .burger .burgerline:before,
+header .burger .burgerline:after {
+  background: #f98b6d;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
 }
-.menu li {
-  list-style: none;
+
+header .burger .burgerline:before {
+  top: 5px;
+}
+header .burger .burgerline:after {
+  top: -5px;
+}
+header .checkbox {
+  display: none;
 }
 
 .checkbox:checked ~ .menu {
-  max-height: 5em;
+  max-height: 240px;
 }
 
-.checkbox:checked:checked ~ .burger-icon .burgerline {
+.checkbox:checked ~ .burger .burgerline {
   background: transparent;
 }
 
-.checkbox:checked ~ .burger-icon .burgerline:before {
-  transform: rotate(135deg);
+.checkbox:checked ~ .burger .burgerline:before {
+  transform: rotate(-45deg);
 }
 
-.checkbox:checked ~ .burger-icon .burgerline:after {
-  transform: rotate(-135deg);
+.checkbox:checked ~ .burger .burgerline:after {
+  transform: rotate(45deg);
 }
 
-.checkbox:checked ~ .burger-icon:not(.steps) .burgerline:before,
-.checkbox:checked ~ .burger-icon:not(.steps) .burgerline:after {
+.checkbox:checked ~ .burger:not(.steps) .burgerline:before,
+.checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   top: 0;
 }
 
-.nav-slim {
-  display: flex;
-  justify-content: center;
+.checkbox {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  padding: 0;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
   background-color: #ede6d6;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: #422b29 0 0 5px 0;
+  z-index: 2;
 }
-.nav-slim ul li a {
-  color: black;
-  font-weight: bold;
+ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: #422b29;
   text-decoration: none;
+}
+ul a:hover {
+  color: #f98b6d;
 }
 
 .hero-image {
