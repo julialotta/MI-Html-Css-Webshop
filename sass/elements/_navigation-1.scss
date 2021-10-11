@@ -1,7 +1,7 @@
 header {
   .burger {
     cursor: pointer;
-    padding: 28px 20px;
+    padding-left: 10px;
 
     .burgerline {
       background: $red;
@@ -9,7 +9,7 @@ header {
       height: 2px;
       position: relative;
       transition: background 0.2s ease-out;
-      width: 25px;
+      width: 15px;
     }
   }
 }
@@ -76,20 +76,22 @@ header {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-}
-.menu {
   list-style: none;
   overflow: hidden;
   background-color: $beige;
   z-index: 2;
 
-  li a {
-    display: block;
-    padding: 20px 20px;
-    color: $brown;
-    text-decoration: none;
+  @include for-tablet-landscape-up {
+    max-height: 60px;
   }
-  a:hover {
-    color: $red;
-  }
+}
+
+li a {
+  display: block;
+  padding: 20px 20px;
+  color: $brown;
+  text-decoration: none;
+}
+a:hover {
+  color: $red;
 }

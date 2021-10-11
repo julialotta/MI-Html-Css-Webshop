@@ -12,7 +12,6 @@ header {
   position: relative;
   height: 60px;
   width: 100%;
-  z-index: 1;
 }
 header div,
 header label {
@@ -44,7 +43,7 @@ i {
 
 header .burger {
   cursor: pointer;
-  padding: 28px 20px;
+  padding-left: 10px;
 }
 header .burger .burgerline {
   background: #f98b6d;
@@ -52,7 +51,7 @@ header .burger .burgerline {
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 25px;
+  width: 15px;
 }
 
 header .burger .burgerline:before,
@@ -114,21 +113,25 @@ header .checkbox {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-}
-
-.menu {
   list-style: none;
   overflow: hidden;
   background-color: #ede6d6;
   z-index: 2;
 }
-.menu li a {
+@media (min-width: 768px) {
+  .menu {
+    max-height: 60px;
+  }
+}
+
+li a {
   display: block;
   padding: 20px 20px;
   color: #422b29;
   text-decoration: none;
 }
-.menu a:hover {
+
+a:hover {
   color: #f98b6d;
 }
 
@@ -166,7 +169,7 @@ header .checkbox {
   top: 0;
   padding-top: 40px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .filter-wrap h3 {
     background-color: white;
     padding: 10px 0;
@@ -181,7 +184,7 @@ header .checkbox {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .filter-list {
     display: none;
   }
@@ -241,3 +244,5 @@ h2 {
   border: none;
   border-radius: 15px;
 }
+
+/*# sourceMappingURL=main.css.map */
