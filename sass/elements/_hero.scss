@@ -9,7 +9,7 @@
   .hero-image-text {
     color: $beige;
     text-align: right;
-    padding: 75px 75px 150px 50px;
+    padding: 75px 75px 75px 50px;
     font-size: 2em;
 
     @include for-tablet-landscape-up {
@@ -30,11 +30,15 @@
   }
 
   .btn-secondary {
-    // Ta bort i mobil-läge
-    color: $beige;
-    background-color: $brown !important;
-    border: 1px solid $beige;
-    margin: 75px 75px;
+    opacity: 0;
+
+    @include for-tablet-landscape-up {
+      opacity: 100%;
+      color: $beige;
+      background-color: $brown !important;
+      border: 1px solid $beige;
+      margin: 75px 75px;
+    }
   }
 }
 
