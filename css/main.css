@@ -193,7 +193,7 @@ header .checkbox {
 .background-image {
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-repeat: repeat-y;
   background-position: center center;
@@ -230,5 +230,3 @@ h2 {
   border: none;
   border-radius: 15px;
 }
-
-/*# sourceMappingURL=main.css.map */
