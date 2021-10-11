@@ -47,9 +47,8 @@ header .burger .burgerline {
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 15px;
+  width: 28px;
 }
-
 header .burger .burgerline:before,
 header .burger .burgerline:after {
   background: #f98b6d;
@@ -60,19 +59,18 @@ header .burger .burgerline:after {
   transition: all 0.2s ease-out;
   width: 100%;
 }
-
 header .burger .burgerline:before {
-  top: 5px;
+  top: 7px;
 }
 header .burger .burgerline:after {
-  top: -5px;
+  top: -7px;
 }
 header .checkbox {
   display: none;
 }
 
 .checkbox:checked ~ .menu {
-  max-height: 240px;
+  max-height: 40px;
 }
 
 .checkbox:checked ~ .burger .burgerline {
@@ -92,14 +90,6 @@ header .checkbox {
   top: 0;
 }
 
-.checkbox {
-  display: none;
-}
-
-.burger {
-  cursor: pointer;
-}
-
 .menu {
   position: absolute;
   width: 100%;
@@ -116,7 +106,7 @@ header .checkbox {
 }
 @media (min-width: 768px) {
   .menu {
-    max-height: 60px;
+    max-height: 40px;
   }
 }
 
