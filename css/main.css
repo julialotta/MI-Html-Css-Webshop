@@ -1,18 +1,235 @@
-/* Error: expected "{".
- *   ,
- * 4 |   position: relative;
- *   |                     ^
- *   '
- *   sass/elements/_header.scss 4:21  @import
- *   sass/main.scss 6:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 4 \2502    position: relative;\a   \2502                      ^\a   \2575 \a   sass/elements/_header.scss 4:21  @import\a   sass/main.scss 6:9               root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Merriweather:wght@300&family=Noto+Serif+JP:wght@200&display=swap");
+* {
+  font-family: "Josefin Sans", sans-serif;
 }
+
+header {
+  background-color: #422b29;
+  position: relative;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+}
+header div,
+header label {
+  width: 100%;
+}
+header .logo h1 {
+  font-family: "Noto Serif JP", serif;
+  font-size: 28px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #f98b6d;
+}
+header .hover:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+i {
+  color: #f98b6d;
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+.footer-background {
+  background-color: #422b29;
+  color: #ede6d6;
+}
+
+header .burger {
+  cursor: pointer;
+  padding: 28px 20px;
+}
+header .burger .burgerline {
+  background: #f98b6d;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 25px;
+}
+
+header .burger .burgerline:before,
+header .burger .burgerline:after {
+  background: #f98b6d;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+header .burger .burgerline:before {
+  top: 5px;
+}
+header .burger .burgerline:after {
+  top: -5px;
+}
+header .checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ .menu {
+  max-height: 240px;
+}
+
+.checkbox:checked ~ .burger .burgerline {
+  background: transparent;
+}
+
+.checkbox:checked ~ .burger .burgerline:before {
+  transform: rotate(-45deg);
+}
+
+.checkbox:checked ~ .burger .burgerline:after {
+  transform: rotate(45deg);
+}
+
+.checkbox:checked ~ .burger:not(.steps) .burgerline:before,
+.checkbox:checked ~ .burger:not(.steps) .burgerline:after {
+  top: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  padding: 0;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: #ede6d6;
+  z-index: 2;
+}
+ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: #422b29;
+  text-decoration: none;
+}
+ul a:hover {
+  color: #f98b6d;
+}
+
+.hero-image {
+  background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
+  height: 90vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hero-image .hero-image-text {
+  color: #ede6d6;
+  text-align: right;
+  padding: 75px 75px 150px 50px;
+  font-size: 4em;
+}
+.hero-image .hero-image-text h1 {
+  text-shadow: 5px 5px 10px #422b29;
+  font-size: 1.3em;
+}
+.hero-image .hero-image-text p {
+  text-shadow: 5px 5px 10px #422b29;
+  font-size: 0.9em;
+}
+.hero-image .btn-secondary {
+  color: #ede6d6;
+  background-color: #422b29 !important;
+  border: 1px solid #ede6d6;
+  margin: 75px 75px;
+}
+
+.filter-wrap {
+  position: sticky;
+  top: 0;
+  padding-top: 40px;
+}
+@media (max-width: 768px) {
+  .filter-wrap h3 {
+    background-color: white;
+    padding: 10px 0;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+  }
+}
+
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .filter-list {
+    display: none;
+  }
+}
+.filter-list li {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333;
+}
+.filter-list li p {
+  margin: 0;
+}
+
+.background-image {
+  display: flex;
+  background-image: url("../../assets/background-image-final.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+.background-image .cups img {
+  width: 100%;
+  border-radius: 10%;
+  box-shadow: #f98b6d 5px 5px 0px 2px;
+  transition: transform 0.1s;
+}
+.background-image .cups:hover {
+  border-radius: 20%;
+}
+
+h2 {
+  color: #422b29;
+  text-align: center;
+  text-shadow: -3px 3px 6px #ede6d6;
+}
+
+.product-wrap {
+  box-shadow: #f98b6d 5px 5px 0px 2px;
+  border-radius: 10%;
+  background-color: whitesmoke;
+}
+.product-wrap .desc {
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+.product-wrap .desc button {
+  background-color: #f98b6d;
+  color: white;
+  justify-content: end;
+  border: none;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
