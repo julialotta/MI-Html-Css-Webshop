@@ -9,22 +9,33 @@ header {
   position: absolute;
   width: 100%;
 }
+
 header label,
 header div {
   width: 100%;
 }
+
 header label section,
 header div section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .checkbox {
   display: none;
 }
+
 header .burger {
   cursor: pointer;
 }
+
 header .burgerline {
   background-color: #f98b6d;
   display: block;
@@ -32,8 +43,10 @@ header .burgerline {
   width: 2em;
   border-radius: 30px;
   position: relative;
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+
 header .burgerline:before,
 header .burgerline:after {
   background-color: #f98b6d;
@@ -43,43 +56,58 @@ header .burgerline:after {
   width: 2em;
   border-radius: 30px;
   position: absolute;
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+
 header .burgerline:after {
   top: 0.6em;
 }
+
 header .burgerline:before {
   top: -0.6em;
 }
+
 header .logo h1 {
   font-family: "Noto Serif JP", serif;
   font-size: 28px;
 }
+
 header .logo a {
   text-decoration: none;
   color: #f98b6d;
 }
+
 header i {
   color: #f98b6d;
   font-size: 25px;
   padding-right: 20px;
 }
+
 header .hover:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
+
 header .checkbox:checked ~ .navbar-nav {
   max-height: 5em;
 }
+
 header .checkbox:checked:checked ~ .burger .burgerline {
   background: transparent;
 }
+
 header .checkbox:checked ~ .burger .burgerline:before {
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
+
 header .checkbox:checked ~ .burger .burgerline:after {
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
+
 header .checkbox:checked ~ .burger:not(.steps) .burgerline:before,
 header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   top: 0;
@@ -92,18 +120,25 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 
 .menu {
   background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   clear: both;
   max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
   top: 40px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .menu a {
   color: #422b29;
   text-decoration: none;
 }
+
 .menu li {
   list-style: none;
 }
@@ -117,11 +152,13 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 }
 
 .checkbox:checked ~ .burger-icon .burgerline:before {
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .checkbox:checked ~ .burger-icon .burgerline:after {
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .checkbox:checked ~ .burger-icon:not(.steps) .burgerline:before,
@@ -130,15 +167,22 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 }
 
 .nav-slim {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ede6d6;
   padding: 10px 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: #422b29 0 0 5px 0;
+  -webkit-box-shadow: #422b29 0 0 5px 0;
+          box-shadow: #422b29 0 0 5px 0;
 }
+
 .nav-slim ul li a {
   color: black;
   font-weight: bold;
@@ -153,20 +197,24 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .hero-image .hero-image-text {
   color: #ede6d6;
   text-align: right;
   padding: 75px 75px 150px 50px;
   font-size: 4em;
 }
+
 .hero-image .hero-image-text h1 {
   text-shadow: 5px 5px 10px #422b29;
   font-size: 1.3em;
 }
+
 .hero-image .hero-image-text p {
   text-shadow: 5px 5px 10px #422b29;
   font-size: 0.9em;
 }
+
 .hero-image .btn-secondary {
   color: #ede6d6;
   background-color: #422b29 !important;
@@ -178,16 +226,20 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   list-style-type: none;
   padding: 0;
 }
+
 .filter-list li {
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: 1px solid #333;
 }
+
 .filter-list li p {
   margin: 0;
 }
 
 .background-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/background-image-final.jpg");
   height: 100%;
@@ -195,14 +247,19 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   background-repeat: repeat-y;
   background-position: center center;
 }
+
 .background-image .cups img {
   width: 100%;
   border-radius: 10%;
-  box-shadow: #f98b6d 5px 5px 0px 2px;
+  -webkit-box-shadow: #f98b6d 5px 5px 0px 2px;
+          box-shadow: #f98b6d 5px 5px 0px 2px;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
 }
+
 .background-image .cups:hover {
-  transform: scale(1.02);
   border-radius: 20%;
 }
 
@@ -211,3 +268,26 @@ h2 {
   text-align: center;
   text-shadow: -3px 3px 6px #ede6d6;
 }
+
+.product-wrap {
+  -webkit-box-shadow: #f98b6d 5px 5px 0px 2px;
+          box-shadow: #f98b6d 5px 5px 0px 2px;
+  border-radius: 10%;
+  background-color: whitesmoke;
+}
+
+.product-wrap .desc {
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.product-wrap .desc button {
+  background-color: #f98b6d;
+  color: white;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: none;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -17,7 +17,6 @@
     }
   }
   .cups:hover {
-    transform: scale(1.02);
     border-radius: 20%;
   }
 }
@@ -26,4 +25,21 @@ h2 {
   color: $brown;
   text-align: center;
   text-shadow: -3px 3px 6px $beige;
+}
+
+.product-wrap {
+  box-shadow: $red 5px 5px 0px 2px;
+  border-radius: 10%;
+  background-color: whitesmoke;
+  .desc {
+    padding-bottom: 20px;
+    padding-top: 5px;
+    button {
+      background-color: $red;
+      color: white;
+      justify-content: end;
+      border: none;
+      border-radius: 15px;
+    }
+  }
 }
