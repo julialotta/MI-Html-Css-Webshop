@@ -186,11 +186,6 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 .filter-list li p {
   margin: 0;
 }
-@media (min-width: 768px) {
-  .filter-list {
-    display: none;
-  }
-}
 
 .background-image {
   display: flex;
