@@ -107,6 +107,7 @@ header .checkbox {
   overflow: hidden;
   background-color: #ede6d6;
   z-index: 2;
+  box-shadow: #422b29 3px 0px 5px 0px;
 }
 @media (min-width: 768px) {
   .menu {
@@ -306,6 +307,21 @@ h2 {
   justify-content: end;
   border: none;
   border-radius: 15px;
+}
+
+.btn-primary {
+  color: #ede6d6;
+  background-color: #422b29 !important;
+  border: 1px solid #ede6d6;
+}
+
+.product-picture {
+  width: 100px;
+}
+
+form {
+  width: 30%;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
