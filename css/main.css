@@ -36,7 +36,31 @@ i {
   padding-right: 15px;
 }
 
-.footer-background {
+footer h6 {
+  text-transform: uppercase;
+  color: #f98b6d;
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  footer h6 {
+    padding: 20px 0 5px 0;
+  }
+}
+footer p {
+  text-transform: lowercase;
+  font-family: "Merriweather", serif;
+  font-size: 11px;
+  color: #ede6d6;
+}
+footer a {
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+  color: #ede6d6;
+}
+footer a:hover {
+  cursor: pointer;
+}
+footer .footer-background {
   background-color: #422b29;
   color: #ede6d6;
 }
@@ -171,6 +195,52 @@ a:hover {
   }
 }
 
+/* 
+.animation {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  z-index: 10;
+
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+}
+
+.mouse {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 35px;
+  border: 3px solid white;
+  transform: scale(0.8);
+  border-radius: 20px;
+  span {
+    position: relative;
+    top: -5px;
+    content: "";
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: scroll 1s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+  }
+  100% {
+    top: 5px;
+    opacity: 0;
+  }
+}
+ */
 .filter-wrap {
   position: sticky;
   top: 0;
