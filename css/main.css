@@ -33,7 +33,7 @@ header .hover:hover {
 i {
   color: #f98b6d;
   font-size: 25px;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .footer-background {
@@ -136,7 +136,7 @@ a:hover {
 .hero-image .hero-image-text {
   color: #ede6d6;
   text-align: right;
-  padding: 75px 75px 150px 50px;
+  padding: 75px 75px 75px 50px;
   font-size: 2em;
 }
 @media (min-width: 768px) {
@@ -158,10 +158,16 @@ a:hover {
   font-size: 0.9em;
 }
 .hero-image .btn-secondary {
-  color: #ede6d6;
-  background-color: #422b29 !important;
-  border: 1px solid #ede6d6;
-  margin: 75px 75px;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .hero-image .btn-secondary {
+    opacity: 100%;
+    color: #ede6d6;
+    background-color: #422b29 !important;
+    border: 1px solid #ede6d6;
+    margin: 75px 75px;
+  }
 }
 
 .filter-wrap {
