@@ -14,6 +14,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+
+
+
     <link rel="stylesheet" href="css/main.css" />
     <title>ログ</title>
   </head>
@@ -47,11 +50,11 @@
       <div class="hero-image">
         <div class="hero-image-text">
           <div class="hero-unit py-5">
-            <h1>Welcome to our website</h1>
+            <h1>Welcome to ログ </h1>
             <p>Designing hand-made ceramics</p>
-            <p>
-              <a class="btn btn-secondary btn-large pb-12"> Shop now </a>
-            </p>
+            
+              <a href="#produkter"class="btn btn-secondary shadow-none btn-large pb-12">Shop now</a>
+            
           </div>
         </div>
       </div>
@@ -63,33 +66,35 @@
       <div class="container">
         <div class="row">
           <aside class="col-12 col-md-3">
-            <h3 class="mb-4">Filter</h3>
-            <ul class="filter-list">
-              <li class="d-flex justify-content-sm-between">
-                <p>Lorem</p>
-                <i class="bi bi-plus-lg justify-content-end"></i>
-              </li>
-              <li class="d-flex justify-content-sm-between">
-                <p>Lorem</p>
-                <i class="bi bi-plus-lg justify-content-end"></i>
-              </li>
-              <li class="d-flex justify-content-sm-between">
-                <p>Lorem</p>
-                <i class="bi bi-plus-lg justify-content-end"></i>
-              </li>
-              <li class="d-flex justify-content-sm-between">
-                <p>Lorem</p>
-                <i class="bi bi-plus-lg justify-content-end"></i>
-              </li>
-              <li class="d-flex justify-content-sm-between">
-                <p>Lorem</p>
-                <i class="bi bi-plus-lg justify-content-end"></i>
-              </li>
-              <li class="d-flex justify-content-sm-between">
-                <p>Lorem</p>
-                <i class="bi bi-plus-lg justify-content-end"></i>
-              </li>
-            </ul>
+            <div class="filter-wrap">
+              <h3 class="mb-4">Filter</h3>
+              <ul class="filter-list">
+                <li class="d-flex justify-content-sm-between">
+                  <p>Lorem</p>
+                  <i class="bi bi-plus-lg justify-content-end"></i>
+                </li>
+                <li class="d-flex justify-content-sm-between">
+                  <p>Lorem</p>
+                  <i class="bi bi-plus-lg justify-content-end"></i>
+                </li>
+                <li class="d-flex justify-content-sm-between">
+                  <p>Lorem</p>
+                  <i class="bi bi-plus-lg justify-content-end"></i>
+                </li>
+                <li class="d-flex justify-content-sm-between">
+                  <p>Lorem</p>
+                  <i class="bi bi-plus-lg justify-content-end"></i>
+                </li>
+                <li class="d-flex justify-content-sm-between">
+                  <p>Lorem</p>
+                  <i class="bi bi-plus-lg justify-content-end"></i>
+                </li>
+                <li class="d-flex justify-content-sm-between">
+                  <p>Lorem</p>
+                  <i class="bi bi-plus-lg justify-content-end"></i>
+                </li>
+              </ul>
+            </div>
           </aside>
           <main id="produkter" class="col-12 col-md-9">
             <div class="d-flex justify-content-between">
@@ -99,80 +104,212 @@
               </div>
             </div>
             <div class="background-image">
-              <div class="py-5 px-5">
+              <div class="container py-5 px-3">
                 <!-- Cups below -->
                 <div class="row">
                   <h2 class="pb-4">Koppar</h2>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kopp1.jpg" alt="Beige and white cup" />
+                  <div class="col-12 col-md-12 col-lg-4 pb-md-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/kopp1.jpg" alt="Beige and white cup" />
+                      </div>
+                      
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          
+                          <div class="col-7 d-flex justify-content-end">
+                              
+                              <button type="button"  data-bs-toggle="modal" data-bs-target="#myModal">
+                                info / köp 
+                              </button>
+                            </div>
+                            
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                  <!-- Modal Header -->
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Kaffekask</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                            
+                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                    <div class="cups pb-4">
+                                      <img src="/assets/kopp1.jpg" alt="Beige and white cup" />
+                                    </div>
+                                    Kaffekask Kaffekask KaffekaskKaffekask
+                                  </div>
+                            
+                                  <!-- Modal footer -->
+                                  <div class="modal-footer">
+                                    <a href="checkout.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Köp nu</button></a>
+                                  </div>
+                            
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kopp2.jpg" alt="Beige and white cup" />
+                  <div class="col-12 col-md-6 col-lg-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/kopp2.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Slutsåld</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kopp3.jpg" alt="Beige and white cup" />
-                      <!-- <p class="addtobag py-3">Add to bag</p> -->
+                  <div class="col-12 col-md-6 col-lg-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/kopp3.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kopp4.jpg" alt="Beige and white cup" />
-                    </div>
-                  </div>
+
                 </div>
 
                 <!-- Bowls below -->
                 <div class="row">
-                  <h2 class="pb-4">Skålar</h2>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/bowl1.jpg" alt="Beige and white cup" />
+                  <h2 class="pt-5 pb-3">Skålar</h2>
+                  <div class="col-12 col-md-12 col-lg-4 pb-md-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/bowl1.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/bowl2.jpg" alt="Beige and white cup" />
+                  <div class="col-12 col-md-6 col-lg-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/bowl2.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/bowl3.jpg" alt="Beige and white cup" />
+                  <div class="col-12 col-md-6 col-lg-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/bowl3.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/bowl4.jpg" alt="Beige and white cup" />
-                    </div>
-                  </div>
-                </div>
-
                 <!-- Flower-pots below -->
                 <div class="row">
-                  <h2 class="pb-4">Krukor</h2>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kruka1.jpg" alt="Beige and white cup" />
+                  <h2 class="pt-5 pb-3">Krukor</h2>
+                  <div class="col-12 col-md-12 col-lg-4 pb-md-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/kruka1.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kruka2.jpg" alt="Beige and white cup" />
+                  <div class="col-12 col-md-6 col-lg-4 pb-sm-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/kruka2.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kruka3.jpg" alt="Beige and white cup" />
-                      <!-- <p class="addtobag py-3">Add to bag</p> -->
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3">
-                    <div class="cups pb-4">
-                      <img src="/assets/kruka4.jpg" alt="Beige and white cup" />
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-wrap">
+                      <div class="cups pb-4">
+                        <img src="/assets/kruka3.jpg" alt="Beige and white cup" />
+                      </div>
+                      <div class="container desc">
+                        <div class="row">
+                          <div class="col-5">
+                            <span>Kaffekask</span>
+                            <span>$23</span>
+                          </div>
+                          <div class="col-7 d-flex justify-content-end">
+                            <button>Visa product</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -188,9 +325,8 @@
         <div class="container py-4">
           <div class="row">
             <div class="col">
-              <a href="mailto:tobias.larsson@medieinstitutet.se"
-                ><p>tobias.larsson@medieinstitutet.se</p></a
-              >
+             
+              <p>tobias.larsson@medieinstitutet.se</p></a>
               <p>Footer</p>
               <p>Footer</p>
               <p>Footer</p>
@@ -218,6 +354,8 @@
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <script src="javascript/main.js"></script>
   </body>

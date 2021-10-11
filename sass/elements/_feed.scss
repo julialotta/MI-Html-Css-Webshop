@@ -2,7 +2,7 @@
   display: flex;
 
   background-image: url("../../assets/background-image-final.jpg");
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-repeat: repeat-y;
   background-position: center center;
@@ -10,14 +10,13 @@
   .cups {
     img {
       width: 100%;
-      border-radius: 20%;
+      border-radius: 10%;
       box-shadow: $red 5px 5px 0px 2px;
 
       transition: transform 0.1s;
     }
   }
   .cups:hover {
-    transform: scale(1.02);
     border-radius: 20%;
   }
 }
@@ -26,4 +25,21 @@ h2 {
   color: $brown;
   text-align: center;
   text-shadow: -3px 3px 6px $beige;
+}
+
+.product-wrap {
+  box-shadow: $red 5px 5px 0px 2px;
+  border-radius: 10%;
+  background-color: whitesmoke;
+  .desc {
+    padding-bottom: 20px;
+    padding-top: 5px;
+    button {
+      background-color: $red;
+      color: white;
+      justify-content: end;
+      border: none;
+      border-radius: 15px;
+    }
+  }
 }
