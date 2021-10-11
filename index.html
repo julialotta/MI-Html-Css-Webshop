@@ -14,6 +14,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+
+
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
@@ -111,14 +114,47 @@
                       <div class="cups pb-4">
                         <img src="/assets/kopp1.jpg" alt="Beige and white cup" />
                       </div>
+                      
                       <div class="container desc">
                         <div class="row">
                           <div class="col-5">
                             <span>Kaffekask</span>
                             <span>$23</span>
                           </div>
+                          
                           <div class="col-7 d-flex justify-content-end">
-                            <button>Visa product</button>
+                              
+                              <button type="button"  data-bs-toggle="modal" data-bs-target="#myModal">
+                                info / köp 
+                              </button>
+                            </div>
+                            
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                  <!-- Modal Header -->
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Kaffekask</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                            
+                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                    <div class="cups pb-4">
+                                      <img src="/assets/kopp1.jpg" alt="Beige and white cup" />
+                                    </div>
+                                    Kaffekask Kaffekask KaffekaskKaffekask
+                                  </div>
+                            
+                                  <!-- Modal footer -->
+                                  <div class="modal-footer">
+                                    <a href="checkout.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Köp nu</button></a>
+                                  </div>
+                            
+                                </div>
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -136,7 +172,7 @@
                             <span>$23</span>
                           </div>
                           <div class="col-7 d-flex justify-content-end">
-                            <button>Visa product</button>
+                            <button>Slutsåld</button>
                           </div>
                         </div>
                       </div>
@@ -319,6 +355,8 @@
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <script src="javascript/main.js"></script>
   </body>
