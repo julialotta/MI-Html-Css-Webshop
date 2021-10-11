@@ -7,6 +7,16 @@
   background-repeat: repeat-y;
   background-position: center center;
 
+  .modal-cup {
+    img {
+      width: 100%;
+      border-radius: 10%;
+      box-shadow: $red 5px 5px 0px 2px;
+
+      transition: transform 0.1s;
+    }
+  }
+
   .cups {
     img {
       width: 100%;
