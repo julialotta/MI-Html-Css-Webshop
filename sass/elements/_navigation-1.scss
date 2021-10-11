@@ -1,39 +1,95 @@
-.menu {
-  background-color: beige;
-  display: flex;
-  position: relative;
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  top: 40px;
-  justify-content: center;
+header {
+  .burger {
+    cursor: pointer;
+    padding: 28px 20px;
 
-  a {
-    color: $brown;
-    text-decoration: none;
+    .burgerline {
+      background: $red;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 25px;
+    }
   }
-  li {
-    list-style: none;
+}
+header .burger .burgerline:before,
+header .burger .burgerline:after {
+  background: $red;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+header {
+  .burger .burgerline:before {
+    top: 5px;
+  }
+
+  .burger .burgerline:after {
+    top: -5px;
+  }
+
+  .checkbox {
+    display: none;
   }
 }
 
 .checkbox:checked ~ .menu {
-  max-height: 5em;
+  max-height: 240px;
 }
 
-.checkbox:checked:checked ~ .burger-icon .burgerline {
+.checkbox:checked ~ .burger .burgerline {
   background: transparent;
 }
 
-.checkbox:checked ~ .burger-icon .burgerline:before {
-  transform: rotate(135deg);
+.checkbox:checked ~ .burger .burgerline:before {
+  transform: rotate(-45deg);
 }
 
-.checkbox:checked ~ .burger-icon .burgerline:after {
-  transform: rotate(-135deg);
+.checkbox:checked ~ .burger .burgerline:after {
+  transform: rotate(45deg);
 }
 
-.checkbox:checked ~ .burger-icon:not(.steps) .burgerline:before,
-.checkbox:checked ~ .burger-icon:not(.steps) .burgerline:after {
+.checkbox:checked ~ .burger:not(.steps) .burgerline:before,
+.checkbox:checked ~ .burger:not(.steps) .burgerline:after {
   top: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  padding: 0;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: $beige;
+  z-index: 2;
+
+  li a {
+    display: block;
+    padding: 20px 20px;
+    color: $brown;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $red;
+  }
 }

@@ -1,58 +1,13 @@
 header {
   background-color: $brown;
-  height: 50px;
-
-  position: absolute;
+  position: relative;
+  height: 60px;
   width: 100%;
+  z-index: 1;
 
-  label,
-  div {
+  div,
+  label {
     width: 100%;
-
-    section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  .checkbox {
-    display: none;
-  }
-
-  .burger {
-    cursor: pointer;
-  }
-
-  .burgerline {
-    background-color: $red;
-    display: block;
-    height: 0.25em;
-    width: 2em;
-    border-radius: 30px;
-    position: relative;
-
-    transition: all 0.2s ease-out;
-  }
-
-  .burgerline:before,
-  .burgerline:after {
-    background-color: $red;
-    content: "";
-    display: block;
-    height: 0.25em;
-    width: 2em;
-    border-radius: 30px;
-    position: absolute;
-    transition: all 0.2s ease-out;
-  }
-
-  .burgerline:after {
-    top: 0.6em;
-  }
-
-  .burgerline:before {
-    top: -0.6em;
   }
 
   .logo {
@@ -66,36 +21,13 @@ header {
       color: $red;
     }
   }
-
-  i {
-    color: $red;
-    font-size: 25px;
-    padding-right: 20px;
-  }
-
   .hover:hover {
     cursor: pointer;
     transform: scale(1.05);
   }
-
-  .checkbox:checked ~ .navbar-nav {
-    max-height: 5em;
-  }
-
-  .checkbox:checked:checked ~ .burger .burgerline {
-    background: transparent;
-  }
-
-  .checkbox:checked ~ .burger .burgerline:before {
-    transform: rotate(135deg);
-  }
-
-  .checkbox:checked ~ .burger .burgerline:after {
-    transform: rotate(-135deg);
-  }
-
-  .checkbox:checked ~ .burger:not(.steps) .burgerline:before,
-  .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
-    top: 0;
-  }
+}
+i {
+  color: $red;
+  font-size: 25px;
+  padding-right: 20px;
 }
