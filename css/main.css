@@ -175,12 +175,10 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 }
 
 .filter-wrap {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding-top: 40px;
 }
-
 @media (max-width: 768px) {
   .filter-wrap h3 {
     background-color: white;
@@ -193,15 +191,9 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 .filter-list {
   list-style-type: none;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media (max-width: 768px) {
   .filter-list {
     display: none;
