@@ -36,7 +36,25 @@ i {
   padding-right: 15px;
 }
 
-.footer-background {
+footer h6 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+footer p {
+  text-transform: lowercase;
+  font-family: "Merriweather", serif;
+  font-size: 13px;
+  color: #ede6d6;
+}
+footer a {
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+  color: #ede6d6;
+}
+footer a:hover {
+  cursor: pointer;
+}
+footer .footer-background {
   background-color: #422b29;
   color: #ede6d6;
 }

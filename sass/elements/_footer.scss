@@ -1,4 +1,25 @@
-.footer-background {
-  background-color: $brown;
-  color: $beige;
+footer {
+  h6 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+  p {
+    text-transform: lowercase;
+    font-family: $secondary-font;
+    font-size: 13px;
+    color: $beige;
+  }
+
+  a {
+    font-family: $secondary-font;
+    text-decoration: none;
+    color: $beige;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  .footer-background {
+    background-color: $brown;
+    color: $beige;
+  }
 }
