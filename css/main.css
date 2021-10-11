@@ -112,19 +112,19 @@ header .checkbox {
   transition: max-height 0.2s ease-out;
 }
 
-ul {
+.menu {
   list-style: none;
   overflow: hidden;
   background-color: #ede6d6;
   z-index: 2;
 }
-ul li a {
+.menu li a {
   display: block;
   padding: 20px 20px;
   color: #422b29;
   text-decoration: none;
 }
-ul a:hover {
+.menu a:hover {
   color: #f98b6d;
 }
 
