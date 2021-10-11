@@ -71,6 +71,7 @@ header {
   overflow: hidden;
   background-color: $beige;
   z-index: 2;
+  box-shadow: $brown 3px 0px 5px 0px;
 
   @include for-tablet-landscape-up {
     max-height: 30px;

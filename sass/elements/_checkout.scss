@@ -1,0 +1,14 @@
+.btn-primary {
+  // Ta bort i mobil-läge
+  color: $beige;
+  background-color: $brown !important;
+  border: 1px solid $beige;
+}
+.product-picture {
+  width: 100px;
+}
+
+form {
+  width: 30%;
+  margin: 20px;
+}

@@ -42,56 +42,44 @@
       </header>
       <div class="menuwrapper">
 
-    
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="py-5">
   <div class="container">
         <div class="background-image">
-          <div class="py-5 px-5"></div>
+          <div class="py-5 px-5">
+          </div>
+          
+
 
           <form>
             <div class="row">
-
-
-              <div class="col py-1">
+              <div class="col pt-1">
                 <label for="exampleFormControlInput1">Förnamn</label>
-                <input type="text" class="form-control" placeholder="First name">
+                <input type="text" class="form-control" placeholder="Förnamn" required>
               </div>
               <div class="col py-1">
                 <label for="exampleFormControlInput1">Efternamn</label>
-                <input type="text" class="form-control" placeholder="Last name">
+                <input type="text" class="form-control" placeholder="Efternamn" required>
               </div>
             </div>
+            <div class="col py-1">
+              <label for="exampleFormControlInput1">Födelsedatum</label>
+            <input type="date" class="form-control" placeholder="Födelsedatum" required>
 
 
             <div class="form-group py-1">
               <label for="exampleFormControlInput1">E-post</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post" required>
             </div>
             <div class="form-group py-1">
               <label for="exampleFormControlInput1">Adress</label>
-              <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress">
+              <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress" required>
             </div>
             <div class="form-group py-1">
               <label for="exampleFormControlInput1">Postkod</label>
-              <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Postkod">
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Postkod" required>
             </div>
+
+            
             <div class="form-group py-1">
               <label for="exampleFormControlSelect1">Antal</label>
               <select class="form-control" id="exampleFormControlSelect1">
@@ -104,10 +92,10 @@
             </div>
 
             <div class="form-group py-1">
-              <label for="exampleFormControlTextarea1">Övrigt</label>
+              <label for="exampleFormControlTextarea1">Övrigt </label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-secondary my-5 ">Lägg beställning</button>
+            <button type="submit" class="btn btn-primary my-5 ">Lägg beställning</button>
           </form>
         </div>
       </main>
