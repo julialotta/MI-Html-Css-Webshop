@@ -1,19 +1,24 @@
-@import "../mixins";
-
 .hero-image {
   background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
-  height: 90vh;
-  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 90vh;
+  width: 100vw;
 
   .hero-image-text {
     color: $beige;
     text-align: right;
     padding: 75px 75px 150px 50px;
-    font-size: 4em;
+    font-size: 2em;
 
+    @include for-tablet-landscape-up {
+      font-size: 3em;
+    }
+
+    @include for-desktop-up {
+      font-size: 4em;
+    }
     h1 {
       text-shadow: 5px 5px 10px $brown;
       font-size: 1.3em; //Görs mindre vid mobil-läge

@@ -9,14 +9,14 @@
 
 //md
 @mixin for-tablet-landscape-up {
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 // lg
 @mixin for-desktop-up {
-  @media (max-width: 992px) {
+  @media (min-width: 992px) {
     @content;
   }
 }

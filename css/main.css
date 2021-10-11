@@ -108,9 +108,9 @@ header .checkbox {
   background-color: #ede6d6;
   z-index: 2;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .menu {
-    max-height: 40px;
+    max-height: 30px;
   }
 }
 
@@ -127,17 +127,27 @@ a:hover {
 
 .hero-image {
   background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
-  height: 90vh;
-  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 90vh;
+  width: 100vw;
 }
 .hero-image .hero-image-text {
   color: #ede6d6;
   text-align: right;
   padding: 75px 75px 150px 50px;
-  font-size: 4em;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .hero-image .hero-image-text {
+    font-size: 3em;
+  }
+}
+@media (min-width: 992px) {
+  .hero-image .hero-image-text {
+    font-size: 4em;
+  }
 }
 .hero-image .hero-image-text h1 {
   text-shadow: 5px 5px 10px #422b29;
@@ -159,7 +169,7 @@ a:hover {
   top: 0;
   padding-top: 40px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .filter-wrap h3 {
     background-color: white;
     padding: 10px 0;
@@ -174,7 +184,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .filter-list {
     display: none;
   }
