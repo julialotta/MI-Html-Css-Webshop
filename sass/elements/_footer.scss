@@ -1,12 +1,17 @@
 footer {
   h6 {
     text-transform: uppercase;
-    padding-bottom: 15px;
+    color: $red;
+    padding-top: 25px;
+
+    @include for-tablet-landscape-up {
+      padding: 20px 0 5px 0;
+    }
   }
   p {
     text-transform: lowercase;
     font-family: $secondary-font;
-    font-size: 13px;
+    font-size: 11px;
     color: $beige;
   }
 
