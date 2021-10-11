@@ -182,11 +182,27 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .filter-wrap {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 40px;
+  }
+}
+
+.filter-wrap h3 {
+  background-color: white;
+  padding: 10px 0;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+
+@media (min-width: 768px) {
   .filter-wrap h3 {
     background-color: white;
     padding: 10px 0;
-    border-top: 3px solid #333;
-    border-bottom: 3px solid #333;
+    border-bottom: none;
+    border-top: none;
   }
 }
 
@@ -200,11 +216,12 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .filter-list {
-    display: none;
+    display: block;
   }
 }
 
