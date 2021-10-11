@@ -14,147 +14,143 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+
+
     <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
+    <title>ログ</title>
   </head>
   <body>
-    <header class="py-1 px-3 d-flex align-items-center">
-      <div class="burger justify-content-start d-md-none">
+      <header class="py-1 px-3 d-flex align-items-center" id="hem">
         <input class="checkbox" type="checkbox" id="checkbox" />
-        <label class="burger" for="checkbox">
-          <span class="burgerline"></span>
-        </label>
-      </div>
-
-      <div class="logo justify-content-md-start justify-content-center d-flex">
-        <a class="justify-content-center" href="#">
-          <h1 class="hover">ログ</h1>
-        </a>
-      </div>
-
-      <div class="d-flex justify-content-end">
-        <i class="bi bi-search hover"></i>
-        <i class="bi bi-cart hover"></i>
-      </div>
-    </header>
-
-    <section
-      class="nav-slim d-md-flex d-sm-none justify-content-center burgermenu"
-    >
-      <nav class="navbar-expand">
-        <ul class="navbar-nav">
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Om oss</a></li>
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Koppar</a></li>
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Vaser</a></li>
-          <li class="px-2 px-md-4 px-lg-5"><a href="#">Krukor</a></li>
+        <label class="burger justify-content-start d-md-none" for="checkbox"><span class="burgerline"></span></label>
+        <ul class="menu d-flex justify-content-around align-items-center">
+          <li><a href="#hem">Hem</a></li>
+          <li><a href="#produkter">Nyheter</a></li>
+          <li><a href="#produkter">Produkter</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
-      </nav>
-    </section>
+        <div class="logo d-flex justify-content-center justify-content-md-start">
+          <a href="#hem">
+            <h1 class="hover">ログ</h1>
+          </a>
+        </div>
+        <div class="d-flex justify-content-end">
+          <i class="bi bi-search hover"></i>
+          <i class="bi bi-cart hover"></i>
+        </div>
+      
+      </header>
+      <div class="menuwrapper">
 
     
 
-    <section></section>
 
-    <section class="py-5">
-      <div class="container">
-            <div class="background-image">
-              <div class="py-5 px-5"></div>
-              <!-- <img src="assets/kopp2.jpg"> -->
-              <form>
-                <div class="row">
-
-          <!--       <div class="form-group">
-                  <label for="exampleFormControlInput1">Förnamn</label>
-                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Förnamn">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Efternamn</label>
-                  <input type="lastname" class="form-control" id="exampleFormControlInput1" placeholder="Efternamn">
-                </div> -->
-
-                <div class="row">
-                  <div class="col py-3">
-                    <label for="exampleFormControlInput1">Förnamn</label>
-                    <input type="text" class="form-control" placeholder="First name">
-                  </div>
-                  <div class="col py-3">
-                    <label for="exampleFormControlInput1">Förnamn</label>
-                    <input type="text" class="form-control" placeholder="Last name">
-                  </div>
-                </div>
+  
 
 
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">E-post</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Adress</label>
-                  <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Postkod</label>
-                  <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Postkod">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Antal</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Övrigt</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-secondary my-5 ">Lägg beställning</button>
-              </form>
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-5">
+  <div class="container">
+        <div class="background-image">
+          <div class="py-5 px-5"></div>
+
+          <form>
+            <div class="row">
+
+
+              <div class="col py-1">
+                <label for="exampleFormControlInput1">Förnamn</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col py-1">
+                <label for="exampleFormControlInput1">Efternamn</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
             </div>
-          </main>
+
+
+            <div class="form-group py-1">
+              <label for="exampleFormControlInput1">E-post</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post">
+            </div>
+            <div class="form-group py-1">
+              <label for="exampleFormControlInput1">Adress</label>
+              <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress">
+            </div>
+            <div class="form-group py-1">
+              <label for="exampleFormControlInput1">Postkod</label>
+              <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Postkod">
+            </div>
+            <div class="form-group py-1">
+              <label for="exampleFormControlSelect1">Antal</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <div class="form-group py-1">
+              <label for="exampleFormControlTextarea1">Övrigt</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary my-5 ">Lägg beställning</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="footer-background">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col">
+          
+          <p>tobias.larsson@medieinstitutet.se</p>
+          <p>Footer</p>
+          <p>Footer</p>
+          <p>Footer</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p>Footer</p>
+          <p>Footer</p>
+          <p>Footer</p>
+          <p>Footer</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <p>Footer</p>
+          <p>Footer</p>
+          <p>Footer</p>
+          <p>Footer</p>
         </div>
       </div>
     </div>
-    </section>
+  </div>
+</footer>
 
-    <footer>
-      <div class="footer-background">
-        <div class="container py-4">
-          <div class="row">
-            <div class="col">
-              
-              <p>tobias.larsson@medieinstitutet.se</p>
-              <p>Footer</p>
-              <p>Footer</p>
-              <p>Footer</p>
-            </div>
-            <div class="col-12 col-md-4">
-              <p>Footer</p>
-              <p>Footer</p>
-              <p>Footer</p>
-              <p>Footer</p>
-            </div>
-            <div class="col-12 col-md-4">
-              <p>Footer</p>
-              <p>Footer</p>
-              <p>Footer</p>
-              <p>Footer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+<!-- Bootstrap js -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+  crossorigin="anonymous"
+></script>
 
-    <!-- Bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="javascript/main.js"></script>
-  </body>
+<script src="javascript/main.js"></script>
+</body>
 </html>
