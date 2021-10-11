@@ -2,9 +2,18 @@ header {
   background-color: $brown;
   height: 50px;
 
+  position: absolute;
+  width: 100%;
+
   label,
   div {
     width: 100%;
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .checkbox {
@@ -22,6 +31,8 @@ header {
     width: 2em;
     border-radius: 30px;
     position: relative;
+
+    transition: all 0.2s ease-out;
   }
 
   .burgerline:before,
@@ -33,6 +44,7 @@ header {
     width: 2em;
     border-radius: 30px;
     position: absolute;
+    transition: all 0.2s ease-out;
   }
 
   .burgerline:after {
@@ -66,10 +78,7 @@ header {
     transform: scale(1.05);
   }
 
-  .checkbox:checked ~ .nav-slim {
-    max-height: 5em;
-  }
-  .checkbox:checked ~ .burgermenu {
+  .checkbox:checked ~ .navbar-nav {
     max-height: 5em;
   }
 
