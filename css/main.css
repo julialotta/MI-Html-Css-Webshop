@@ -24,7 +24,6 @@ header .burgerline {
   width: 2em;
   border-radius: 30px;
   position: relative;
-  transition: background 0.2s ease-out;
 }
 header .burgerline:before,
 header .burgerline:after {
@@ -35,7 +34,6 @@ header .burgerline:after {
   width: 2em;
   border-radius: 30px;
   position: absolute;
-  transition: background 0.2s ease-out;
 }
 header .burgerline:after {
   top: 0.6em;
@@ -143,9 +141,17 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 }
 .hero-image .hero-image-text h1 {
   text-shadow: 5px 5px 10px #422b29;
+  font-size: 1.3em;
 }
 .hero-image .hero-image-text p {
   text-shadow: 5px 5px 10px #422b29;
+  font-size: 0.9em;
+}
+.hero-image .btn-secondary {
+  color: #ede6d6;
+  background-color: #422b29 !important;
+  border: 1px solid #ede6d6;
+  margin: 75px 75px;
 }
 
 .filter-list {
@@ -176,7 +182,7 @@ header .checkbox:checked ~ .burger:not(.steps) .burgerline:after {
 }
 .background-image .cups img {
   width: 100%;
-  border-radius: 20%;
+  border-radius: 10%;
   box-shadow: #f98b6d 5px 5px 0px 2px;
   transition: transform 0.1s;
 }
@@ -190,5 +196,3 @@ h2 {
   text-align: center;
   text-shadow: -3px 3px 6px #ede6d6;
 }
-
-/*# sourceMappingURL=main.css.map */

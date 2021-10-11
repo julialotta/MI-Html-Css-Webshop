@@ -16,9 +16,19 @@
 
     h1 {
       text-shadow: 5px 5px 10px $brown;
+      font-size: 1.3em; //Görs mindre vid mobil-läge
     }
     p {
       text-shadow: 5px 5px 10px $brown;
+      font-size: 0.9em; //Görs mindre vid mobil-läge
     }
+  }
+
+  .btn-secondary {
+    // Ta bort i mobil-läge
+    color: $beige;
+    background-color: $brown !important;
+    border: 1px solid $beige;
+    margin: 75px 75px;
   }
 }
