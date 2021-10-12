@@ -6,6 +6,9 @@ html {
 * {
   font-family: "Josefin Sans", sans-serif;
 }
+* p {
+  color: #422b29;
+}
 
 header {
   background-color: #422b29;
@@ -179,6 +182,7 @@ a:hover {
   font-size: 1.3em;
 }
 .hero-image .hero-image-text p {
+  color: #ede6d6;
   text-shadow: 5px 5px 10px #422b29;
   font-size: 0.9em;
 }
@@ -209,9 +213,10 @@ a:hover {
 }
 .filter-wrap h3 {
   background-color: white;
+  color: #422b29;
   padding: 10px 0;
-  border-top: 3px solid #333;
-  border-bottom: 3px solid #333;
+  border-top: 3px solid #422b29;
+  border-bottom: 3px solid #422b29;
 }
 @media (min-width: 768px) {
   .filter-wrap h3 {
@@ -220,6 +225,13 @@ a:hover {
     border-bottom: none;
     border-top: none;
   }
+}
+
+aside i:hover {
+  cursor: pointer;
+}
+aside ul li p {
+  color: #422b29;
 }
 
 .filter-list {
@@ -237,7 +249,7 @@ a:hover {
 .filter-list li {
   padding-bottom: 1em;
   margin-bottom: 1em;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #422b29;
 }
 .filter-list li p {
   margin: 0;
@@ -252,11 +264,18 @@ a:hover {
   background-position: center center;
 }
 .background-image .cups-modal img {
-  width: 100%;
-  text-align: center;
+  width: 60%;
+}
+@media (min-width: 768px) {
+  .background-image .cups-modal img {
+    width: 100%;
+  }
 }
 .background-image p {
+  font-family: "Merriweather", serif;
+  font-size: 13px;
   text-align: center;
+  padding: 0 25px;
 }
 .background-image .cups img {
   width: 100%;
@@ -338,6 +357,23 @@ button .cups-modal {
   border-radius: 6px;
 }
 
+.blackcheck {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.blackcheck div {
+  background-color: white;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .avatarround {
   opacity: 0;
 }
@@ -361,6 +397,7 @@ button .cups-modal {
 
 .mini-container {
   width: 80%;
+  margin: auto;
 }
 
 .summary {
