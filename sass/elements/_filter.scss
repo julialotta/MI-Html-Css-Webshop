@@ -9,14 +9,27 @@
   }
   h3 {
     background-color: white;
+    color: $brown;
     padding: 10px 0;
-    border-top: 3px solid #333;
-    border-bottom: 3px solid #333;
+    border-top: 3px solid $brown;
+    border-bottom: 3px solid $brown;
     @include for-tablet-landscape-up {
       background-color: white;
       padding: 10px 0;
       border-bottom: none;
       border-top: none;
+    }
+  }
+}
+aside {
+  i:hover {
+    cursor: pointer;
+  }
+  ul {
+    li {
+      p {
+        color: $brown;
+      }
     }
   }
 }
@@ -36,6 +49,6 @@
     }
     padding-bottom: 1em;
     margin-bottom: 1em;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $brown;
   }
 }
