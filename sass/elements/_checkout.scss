@@ -21,6 +21,10 @@
     border-radius: 10%;
     box-shadow: $red 5px 5px 0px 2px;
     transition: transform 0.1s;
+
+    @include for-tablet-landscape-up {
+      width: 70%;
+    }
   }
 
   .klarnalogo {
@@ -28,6 +32,23 @@
     border-radius: 6px;
   }
 }
+
+.avatarround {
+  opacity: 0;
+
+  @include for-tablet-landscape-up {
+    opacity: 100%;
+    background-color: #bcd5d3;
+    color: #5a6866;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .mini-container {
   width: 80%;
 }
