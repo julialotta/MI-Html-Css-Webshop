@@ -1,0 +1,50 @@
+.background-image {
+  display: flex;
+  background-image: url("../../assets/background-image-final.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center center;
+
+  .confirmation-container {
+    width: 80%;
+
+    margin: 10% auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.274);
+    justify-content: center;
+
+    .confirmation-product {
+      h3 {
+        color: $brown;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: block;
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        margin: 10px auto;
+        padding: -10px;
+      }
+      .your-order {
+        @include for-phone-only {
+          width: 100%;
+        }
+        width: 50%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+        .ordered-product {
+          color: $brown;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .article-number {
+    padding-top: 50px;
+  }
+}
