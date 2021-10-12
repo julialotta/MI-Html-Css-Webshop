@@ -341,6 +341,15 @@ button .cups-modal {
   padding-right: 500px;
 }
 
+.container-fluid:nth-child(3) {
+  font-size: 8px;
+}
+@media (min-width: 768px) {
+  .container-fluid:nth-child(3) {
+    font-size: 15px;
+  }
+}
+
 .container .productimg {
   width: 100%;
   border-radius: 10%;
@@ -353,8 +362,14 @@ button .cups-modal {
   }
 }
 .container .klarnalogo {
-  width: 50px;
-  border-radius: 6px;
+  width: 0;
+}
+@media (min-width: 768px) {
+  .container .klarnalogo {
+    opacity: 100%;
+    width: 50px;
+    border-radius: 6px;
+  }
 }
 
 .blackcheck {
@@ -433,6 +448,10 @@ button .cups-modal {
 
 .beige-frame {
   background-color: #f0eeea;
+  width: fit-content;
+}
+.beige-frame p {
+  font-size: 15px;
 }
 
 .box-frame {
@@ -485,10 +504,12 @@ button .cups-modal {
 }
 .purchase .cancel {
   background-color: white;
+  width: 80px;
 }
 .purchase .continue {
   background-color: #333;
   color: white;
+  width: 80px;
 }
 
 .background-image {
