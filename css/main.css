@@ -264,13 +264,18 @@ aside ul li p {
   background-position: center center;
 }
 .background-image .cups-modal img {
-  width: 100%;
-  text-align: center;
+  width: 60%;
+}
+@media (min-width: 768px) {
+  .background-image .cups-modal img {
+    width: 100%;
+  }
 }
 .background-image p {
   font-family: "Merriweather", serif;
   font-size: 13px;
   text-align: center;
+  padding: 0 25px;
 }
 .background-image .cups img {
   width: 100%;

@@ -8,15 +8,18 @@
 
   .cups-modal {
     img {
-      width: 100%;
-      text-align: center;
+      width: 60%;
+
+      @include for-tablet-landscape-up {
+        width: 100%;
+      }
     }
   }
-
   p {
     font-family: $secondary-font;
     font-size: 13px;
     text-align: center;
+    padding: 0 25px;
   }
 
   .cups {
