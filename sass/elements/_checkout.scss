@@ -55,3 +55,63 @@
     padding: 5px;
   }
 }
+
+.beige-frame {
+  background-color: #f0eeea;
+}
+
+.box-frame {
+  border: 1px solid #959391;
+  border-radius: 5px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding: 13px;
+  label {
+    position: absolute;
+    color: grey;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  input,
+  select {
+    padding: 15px;
+    padding-top: 30px;
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #959391;
+    .col-12 input {
+      border-right: 1px solid #959391;
+    }
+    .col-6 {
+      input {
+        border-right: 1px solid #959391 !important;
+      }
+    }
+  }
+  .line-right {
+    border-right: 1px solid #959391 !important;
+  }
+  .col-12,
+  .col-6 {
+    padding: 0;
+  }
+}
+
+.purchase {
+  padding: 30px;
+  text-align: right;
+  button {
+    padding: 10px;
+  }
+  .cancel {
+    background-color: white;
+  }
+  .continue {
+    background-color: #333;
+    color: white;
+  }
+}
