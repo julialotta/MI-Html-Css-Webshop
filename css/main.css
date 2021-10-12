@@ -299,6 +299,7 @@ a:hover {
 }
 .background-image .cups-modal img {
   width: 100%;
+  text-align: center;
 }
 .background-image p {
   text-align: center;
@@ -342,13 +343,14 @@ h2 {
   border: 1px solid #ede6d6;
 }
 
-.product-picture {
-  width: 100px;
+#checkOutform {
+  width: 100%;
+  padding-right: 500px;
 }
 
-form {
-  width: 30%;
-  margin: 20px;
+.container img {
+  width: 100%;
+  border-radius: 10%;
+  box-shadow: #f98b6d 5px 5px 0px 2px;
+  transition: transform 0.1s;
 }
-
-/*# sourceMappingURL=main.css.map */
