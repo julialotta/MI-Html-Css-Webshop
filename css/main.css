@@ -111,7 +111,6 @@ header .checkbox {
 }
 
 .checkbox:checked ~ .burger .burgerline:before {
-<<<<<<< HEAD
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -119,13 +118,6 @@ header .checkbox {
 .checkbox:checked ~ .burger .burgerline:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-=======
-  transform: rotate(-45deg);
-}
-
-.checkbox:checked ~ .burger .burgerline:after {
-  transform: rotate(45deg);
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
 }
 
 .checkbox:checked ~ .burger:not(.steps) .burgerline:before,
@@ -146,12 +138,8 @@ header .checkbox {
   overflow: hidden;
   background-color: #ede6d6;
   z-index: 2;
-<<<<<<< HEAD
   -webkit-box-shadow: #422b29 3px 0px 5px 0px;
           box-shadow: #422b29 3px 0px 5px 0px;
-=======
-  box-shadow: #422b29 3px 0px 5px 0px;
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
 }
 @media (min-width: 768px) {
   .menu {
@@ -246,14 +234,10 @@ a:hover {
   list-style-type: none;
   padding: 0;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-  flex-direction: column;
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
   display: none;
 }
 @media (min-width: 768px) {
@@ -288,14 +272,10 @@ a:hover {
 .background-image .cups img {
   width: 100%;
   border-radius: 10%;
-<<<<<<< HEAD
   -webkit-box-shadow: #f98b6d 5px 5px 0px 2px;
           box-shadow: #f98b6d 5px 5px 0px 2px;
   -webkit-transition: -webkit-transform 0.1s;
   transition: -webkit-transform 0.1s;
-=======
-  box-shadow: #f98b6d 5px 5px 0px 2px;
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
   transition: transform 0.1s;
 }
 .background-image .cups:hover {
@@ -309,12 +289,8 @@ h2 {
 }
 
 .product-wrap {
-<<<<<<< HEAD
   -webkit-box-shadow: #f98b6d 5px 5px 0px 2px;
           box-shadow: #f98b6d 5px 5px 0px 2px;
-=======
-  box-shadow: #f98b6d 5px 5px 0px 2px;
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
   border-radius: 10%;
   background-color: whitesmoke;
 }
@@ -325,13 +301,9 @@ h2 {
 .product-wrap .desc button {
   background-color: #f98b6d;
   color: white;
-<<<<<<< HEAD
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-=======
-  justify-content: end;
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
   border: none;
   border-radius: 15px;
 }
@@ -372,14 +344,10 @@ button .cups-modal {
 .container .productimg {
   width: 100%;
   border-radius: 10%;
-<<<<<<< HEAD
   -webkit-box-shadow: #f98b6d 5px 5px 0px 2px;
           box-shadow: #f98b6d 5px 5px 0px 2px;
   -webkit-transition: -webkit-transform 0.1s;
   transition: -webkit-transform 0.1s;
-=======
-  box-shadow: #f98b6d 5px 5px 0px 2px;
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
   transition: transform 0.1s;
 }
 @media (min-width: 768px) {
@@ -524,54 +492,4 @@ button .cups-modal {
   background-color: #333;
   color: white;
 }
-<<<<<<< HEAD
 /*# sourceMappingURL=main.css.map */
-=======
-
-.background-image {
-  display: flex;
-  background-image: url("../../assets/background-image-final.jpg");
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center center;
-}
-.background-image .confirmation-container {
-  width: 80%;
-  margin: 10% auto;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.274);
-  justify-content: center;
-}
-.background-image .confirmation-container .confirmation-product h3 {
-  color: #422b29;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  display: block;
-  text-decoration: underline;
-  text-align: center;
-}
-.background-image .confirmation-container .confirmation-product p {
-  margin: 10px auto;
-  padding: -10px;
-}
-.background-image .confirmation-container .confirmation-product .your-order {
-  width: 50%;
-  margin: 0 auto;
-}
-@media (max-width: 576px) {
-  .background-image .confirmation-container .confirmation-product .your-order {
-    width: 100%;
-  }
-}
-.background-image .confirmation-container .confirmation-product .your-order img {
-  width: 100%;
-}
-.background-image .confirmation-container .confirmation-product .your-order .ordered-product {
-  color: #422b29;
-  text-align: center;
-}
-.background-image .article-number {
-  padding-top: 50px;
-}
->>>>>>> a4ed3ff88cca2e67d7f13da2b049ec3782946438
