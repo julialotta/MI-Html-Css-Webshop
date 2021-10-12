@@ -12,4 +12,4 @@ gulp.task("watch-sass", function () {
     gulp.watch("sass/**/*.scss", gulp.series("compile"));
 });
 
-gulp.task ("default", gulp.series("compile", "watch-sass"), function () {});
+gulp.task("default", gulp.series("compile", "watch-sass"), function () {});
