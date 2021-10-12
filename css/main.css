@@ -290,6 +290,7 @@ h2 {
   border: none;
   border-radius: 15px;
 }
+
 .product-wrap .desc button:hover {
   color: #422b29;
 }
@@ -298,6 +299,7 @@ button a {
   color: white;
   text-decoration: none;
 }
+
 button a:hover {
   color: #422b29;
 }
@@ -364,6 +366,77 @@ button a:hover {
   padding: 5px;
 }
 
+<<<<<<< HEAD
+.beige-frame {
+  background-color: #f0eeea;
+}
+
+.box-frame {
+  border: 1px solid #959391;
+  border-radius: 5px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding: 13px;
+}
+
+.box-frame label {
+  position: absolute;
+  color: grey;
+  font-weight: 100;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.box-frame input,
+.box-frame select {
+  padding: 15px;
+  padding-top: 30px;
+  width: 100%;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #959391;
+}
+
+.box-frame input .col-12 input,
+.box-frame select .col-12 input {
+  border-right: 1px solid #959391;
+}
+
+.box-frame input .col-6 input,
+.box-frame select .col-6 input {
+  border-right: 1px solid #959391 !important;
+}
+
+.box-frame .line-right {
+  border-right: 1px solid #959391 !important;
+}
+
+.box-frame .col-12,
+.box-frame .col-6 {
+  padding: 0;
+}
+
+.purchase {
+  padding: 30px;
+  text-align: right;
+}
+
+.purchase button {
+  padding: 10px;
+}
+
+.purchase .cancel {
+  background-color: white;
+}
+
+.purchase .continue {
+  background-color: #333;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
+=======
 .blackcheck {
   background-color: black;
   width: 22px;
@@ -395,3 +468,4 @@ button a:hover {
   align-items: center;
   justify-content: center;
 }
+>>>>>>> 6c918dac39592baaefe23a9e531b0dffe76603ac

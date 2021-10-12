@@ -94,17 +94,104 @@
           <h3 class="text-center">Slutför din betalning</h3>
           <div class="iframe p-4">
             <h5>Dina uppgifter</h5>
-            <div class="frame p-4">
-              <span class="hl p-1">Privatkund</span>
-              <span class="pn">199410•• ••••</span>
-              <p class="font-weight-bold">Sebastian Tegel</p>
-              <p>Strålgatan 5, 112 63, Stockholm</p>
-              <p>charles.krook@gmail.com, 070 •••543</p>
-            </div>
-            <div>
-              <span>Autoifyllnadsinställningar • </span
-              ><span>Klarnas Dataskyddsinformation</span>
-            </div>
+            <p>Adressen ska vara i Sverige.</p>
+            <form class="container-fluid" action="">
+              <div class="box-frame">
+                <div class="row">
+                  <div class="col-12">
+                    <label for="customer">Handlar som</label>
+                    <select class="form-control" id="customer" required>
+                      <option>Privatkund</option>
+                      <option>Företag</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="mailladress">Mejladress</label>
+                    <input
+                      class="line-right"
+                      type="email"
+                      id="mailadress"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="postcode">Postnummer</label>
+                    <input
+                      type="text"
+                      id="postcode"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="personalnumber">Personummer (ÅÅMMDDXXXX)</label>
+                    <input type="text" id="personalnumber" name="Handlar som" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="firstname">Förnamn</label>
+                    <input
+                      class="line-right"
+                      id="firstname"
+                      type="text"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="lastname">Efternamn</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="address">Adress</label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="suburb">Ort</label>
+                    <input
+                      class="line-right"
+                      id="suburb"
+                      type="text"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="phonenumber">Telefonnummer</label>
+                    <input
+                      type="text"
+                      id="phonenumber"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="purchase">
+                <button type="button" class="cancel">Avbryt</button>
+                <button type="button" class="continue">Fortsätt</button>
+              </div>
+            </form>
             <h5>Betalsätt</h5>
             <div class="frame p-4">
               <div class="container-fluid">
@@ -122,6 +209,11 @@
                         <div class="col d-flex flex-wrap flex-column">
                           <p>Sebastian Tegel</p>
                           <p>sebastian.tegel@medieinstitutet.se</p>
+                          <div class="beige-frame p-3">
+                            <b>Mer tid, färre avgifter.</b>
+                            <p>Klarna har blivit ännu bättre.</p>
+                            <a href="#">Läs mer</a>
+                          </div>
                         </div>
                         <div class="col-1">...</div>
                       </div>
