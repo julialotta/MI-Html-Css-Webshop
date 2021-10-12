@@ -10,6 +10,13 @@
   padding: 80px;
 }
 
+form {
+  padding: 30px !important;
+  @include for-phone-only {
+    padding: 0px !important;
+  }
+}
+
 #checkOutform {
   width: 100%;
   padding-right: 500px;
@@ -30,6 +37,10 @@
   .klarnalogo {
     width: 50px;
     border-radius: 6px;
+    display: none;
+    @include for-tablet-landscape-up {
+      display: block;
+    }
   }
 }
 
@@ -70,8 +81,12 @@
   border: 1px solid #e7e7e7;
 }
 .frame {
+  flex-wrap: wrap;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
+  @include for-tablet-landscape-up {
+    padding: 0;
+  }
   span,
   p {
     margin: 0;
