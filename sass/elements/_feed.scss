@@ -52,3 +52,15 @@ h2 {
     }
   }
 }
+
+.modal-footer {
+  .btn-danger {
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $brown;
+    }
+  }
+}
