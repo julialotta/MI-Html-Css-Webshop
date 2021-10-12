@@ -16,15 +16,20 @@
 }
 
 .container {
-  img {
+  .productimg {
     width: 100%;
     border-radius: 10%;
     box-shadow: $red 5px 5px 0px 2px;
     transition: transform 0.1s;
   }
+
+  .klarnalogo {
+    width: 50px;
+    border-radius: 6px;
+  }
 }
 .mini-container {
-  width: 800px;
+  width: 80%;
 }
 
 .summary {
@@ -56,6 +61,7 @@
   }
 }
 
+<<<<<<< HEAD
 .beige-frame {
   background-color: #f0eeea;
 }
@@ -114,4 +120,37 @@
     background-color: #333;
     color: white;
   }
+=======
+.blackcheck {
+  background-color: black;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  .whitecheck {
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.avatarround {
+  background-color: #bcd5d3;
+  color: #5a6866;
+  font-size: 15px;
+  border-radius: 1000%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+>>>>>>> 6c918dac39592baaefe23a9e531b0dffe76603ac
 }
