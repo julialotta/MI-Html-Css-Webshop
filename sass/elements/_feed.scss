@@ -50,10 +50,13 @@ h2 {
       border: none;
       border-radius: 15px;
     }
+    button:hover {
+      color: $brown;
+    }
   }
 }
 
-.btn-secondary {
+button {
   a {
     color: white;
     text-decoration: none;
