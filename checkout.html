@@ -15,10 +15,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
-
     <link rel="stylesheet" href="css/main.css" />
     <title>ログ</title>
   </head>
+<<<<<<< HEAD
   <body>
       <header class="py-1 px-3 d-flex align-items-center" id="hem">
         <input class="checkbox" type="checkbox" id="checkbox" />
@@ -44,113 +44,305 @@
 
 
 
+=======
+  <body class="bg-w">
+    <header class="py-1 px-3 d-flex align-items-center" id="hem">
+      <input class="checkbox" type="checkbox" id="checkbox" />
+      <label class="burger justify-content-start d-md-none" for="checkbox"
+        ><span class="burgerline"></span
+      ></label>
+      <ul class="menu d-flex justify-content-around align-items-center">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="index.html#produkter">Nyheter</a></li>
+        <li><a href="index.html#produkter">Produkter</a></li>
+        <li><a href="checkout.html#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="logo d-flex justify-content-center justify-content-md-start">
+        <a href="index.html">
+          <h1 class="hover">ログ</h1>
+        </a>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-search hover"></i>
+        <i class="bi bi-cart hover"></i>
+      </div>
+    </header>
+>>>>>>> 34ad678760c6da903e40237adbf48dc77a23a50e
 
-        <div class="background-image">
-          <div class="py-5 px-5">
+    <div>
+      <div class="container mini-container py-5">
+        <div class="row mb-5 px-5 py-4">
+          <h3 class="text-center">I din varukorg (1)</h3>
+          <div class="col-sm mt-5">
+            <img class="productimg" src="/assets/kopp1.jpg" alt="" />
           </div>
-
-          <div class="container">
-            <section class="pt-5">
-              <div class="col-12 col-md-6 col-lg-4 pb-sm-4 mb-4">
-
-              <img src="/assets/kopp1.jpg"><h2>KAFFEKASK</h2>
-              <p>Kask
-                Ordet kask kan komma från lågtyskans 'karsch', som även finns i sydtyska dialekter som 'chärsch', med betydelsen stark, rivande (om drycker). 
-                <p>Ordet är säkert belagt hos författaren Onkel Adam 1862: "’kask’ eller 'Uddevalla' (yttrat av en vandrande gesäll)." Ordet är allmänt i mellersta och norra Sverige, och även i Norge som karsk/kask.</p>
-                <p> Som verb, att 'kaska', är det belagt i skrift sedan 1890-talet.</p>
+          <div class="col-sm">
+            <div class="container">
+              <div class="row">
+                <div class="col pt-4 d-flex flex-column">
+                  <span>I lager</span>
+                  <b>Kaffekask</b>
+                  <p>Beige kopp i keramik</p>
+                  <input type="number"/>
+                </div>
+                <div class="pt-4 col d-flex justify-content-end">
+                  <i class="bi bi-x-circle"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="row summary">
+          <div class="col-6">Produkter</div>
+          <div class="col-6 d-flex justify-content-end">598 SEK</div>
+        </div>
+        <div class="row">
+          <div class="col-6">Frakt</div>
+          <div class="col-6 d-flex justify-content-end">29 SEK</div>
+        </div>
+        <div class="row">
+          <div class="col-6">ATT BETALA</div>
+          <div class="col-6 d-flex justify-content-end">627 SEK</div>
+        </div>
+        <div class="row mini-container p-5">
+          <h3 class="text-center">Få senaste nyheterna!</h3>
+          <div class="col-1">
+            <input type="checkbox" />
+          </div>
+          <div class="col">
+            Ja tack, jag vill gärna få nyhetsbrev med VIP-erbjudanden och
+            information om de senaste kollektionerna. Genom att kryssa ur rutan
+            tackar jag nej till nyhetsbrev. Läs mer om hur vi behandlar din
+            privata information i integritetspolicyn.
+          </div>
+        </div>
 
-
-          <form id="checkoutForm">
-            <div class="row">
-              <div class="col pt-1">
-                <label for="exampleFormControlInput1">Förnamn</label>
-                <input type="text" class="form-control" placeholder="Förnamn" required>
+        <div class="row">
+          <h3 class="text-center">Slutför din betalning</h3>
+          <div class="iframe p-4">
+            <h5>Dina uppgifter</h5>
+            <p>Adressen ska vara i Sverige.</p>
+            <form class="container-fluid" action="">
+              <div class="box-frame">
+                <div class="row">
+                  <div class="col-12">
+                    <label for="customer">Handlar som</label>
+                    <select class="form-control" id="customer" required>
+                      <option>Privatkund</option>
+                      <option>Företag</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="mailladress">Mejladress</label>
+                    <input
+                      class="line-right"
+                      type="email"
+                      id="mailadress"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="postcode">Postnummer</label>
+                    <input
+                      type="text"
+                      id="postcode"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="personalnumber">Personummer (ÅÅMMDDXXXX)</label>
+                    <input type="text" id="personalnumber" name="Handlar som" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="firstname">Förnamn</label>
+                    <input
+                      class="line-right"
+                      id="firstname"
+                      type="text"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="lastname">Efternamn</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="address">Adress</label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <label for="suburb">Ort</label>
+                    <input
+                      class="line-right"
+                      id="suburb"
+                      type="text"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="phonenumber">Telefonnummer</label>
+                    <input
+                      type="text"
+                      id="phonenumber"
+                      name="Handlar som"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="col py-1">
-                <label for="exampleFormControlInput1">Efternamn</label>
-                <input type="text" class="form-control" placeholder="Efternamn" required>
+              <div class="purchase">
+                <button type="button" class="cancel">Avbryt</button>
+                <button type="button" class="continue">Fortsätt</button>
+              </div>
+            </form>
+            <h5>Betalsätt</h5>
+            <div class="frame p-md-3">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-1 blackcheck">
+                    <div class="whitecheck"></div>
+                  </div>
+                  <div class="col-10">
+                    <p>Klarna</p>
+                    <p>Säkert och smidigt</p>
+                    <div class="container-fluid frame p-3">
+                      <div class="row">
+                        <div class="col-1 avatarround d-flex justify-content-center align-items-center">
+                          <p>ST</p>
+                        </div>
+                        <div class="col d-flex flex-wrap flex-column">
+                          <p>Sebastian Tegel</p>
+                          <p>sebastian.tegel@medieinstitutet.se</p>
+                          <div class="beige-frame p-3">
+                            <b>Mer tid, färre avgifter.</b>
+                            <p>Klarna har blivit ännu bättre.</p>
+                            <a href="#">Läs mer</a>
+                          </div>
+                        </div>
+                        <div class="col-1">...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1">
+                  <img class="klarnalogo" src="https://www.klarna.com/assets/sites/5/2020/02/18101222/klarna-og.png" alt="Klarna payment logo">
+                </div>
+                </div>
               </div>
             </div>
-            <div class="col py-1">
-              <label for="exampleFormControlInput1">Födelsedatum</label>
-            <input type="date" class="form-control" placeholder="Födelsedatum" required>
-
-
-            <div class="form-group py-1">
-              <label for="exampleFormControlInput1">E-post</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post" required>
-            </div>
-            <div class="form-group py-1">
-              <label for="exampleFormControlInput1">Adress</label>
-              <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress" required>
-            </div>
-            <div class="form-group py-1">
-              <label for="exampleFormControlInput1">Postkod</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Postkod" required>
-            </div>
-
-            
-            <div class="form-group py-1">
-              <label for="exampleFormControlSelect1">Antal</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-
-            <div class="form-group py-1">
-              <label for="exampleFormControlTextarea1">Övrigt </label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary my-5 ">Lägg beställning</button>
-          </form>
+          </div>
         </div>
-      </main>
-    </div>
-  </div>
-</div>
-</section>
-
-<footer id="kontakt">
-  <div class="footer-background">
-    <div class="footer-background container py-4">
-      <div class="row">
-        <div class="col text-center">
-          <h6>Om ログ</h6>
-          <p><a href="checkout.html#footer">Om oss</a></p>
-          <p><a href="checkout.html#footer">Karriär hos ログ</a></p>
-          <p><a href="checkout.html#footer">Policy</a></p>
-        </div>
-        <div class="col-12 col-md-4 text-center">
-          <h6>もしもログ</h6>
-          <p><a href="checkout.html#footer">私たちに関しては</a></p>
-          <p><a href="checkout.html#footer">でのキャリアログ</a></p>
-          <p><a href="checkout.html#footer">ポリシー</a></p>
-        </div>
-        <div class="col-12 col-md-4 text-center">
-          <h6>kontakt</h6>
-          <p><a href="mailto:tobias.larsson@medieinstitute.se">Maila oss</a></p>
-          <p>+47 070 473 14 30</p>
-          <p>Götgatan 1, 116 46 stockholm</p>
-        </div>
-
       </div>
     </div>
-  </div>
-</footer>
 
-<!-- Bootstrap js -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-  crossorigin="anonymous"
-></script>
+    <!-- <form id="checkoutForm">
+                  <div class="row">
+                    <div class="col pt-1">
+                      <label for="exampleFormControlInput1">Förnamn</label>
+                      <input type="text" class="form-control" placeholder="Förnamn" required>
+                    </div>
+                    <div class="col py-1">
+                      <label for="exampleFormControlInput1">Efternamn</label>
+                      <input type="text" class="form-control" placeholder="Efternamn" required>
+                    </div>
+                  </div>
+                  <div class="col py-1">
+                    <label for="exampleFormControlInput1">Födelsedatum</label>
+                  <input type="date" class="form-control" placeholder="Födelsedatum" required>
+      
+      
+                  <div class="form-group py-1">
+                    <label for="exampleFormControlInput1">E-post</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post" required>
+                  </div>
+                  <div class="form-group py-1">
+                    <label for="exampleFormControlInput1">Adress</label>
+                    <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress" required>
+                  </div>
+                  <div class="form-group py-1">
+                    <label for="exampleFormControlInput1">Postkod</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Postkod" required>
+                  </div>
+      
+                  
+                  <div class="form-group py-1">
+                    <label for="exampleFormControlSelect1">Antal</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+      
+                  <div class="form-group py-1">
+                    <label for="exampleFormControlTextarea1">Övrigt </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary my-5 ">Lägg beställning</button>
+                </form> -->
 
-<script src="javascript/main.js"></script>
-</body>
+    <footer id="kontakt">
+      <div class="footer-background">
+        <div class="footer-background container py-4">
+          <div class="row">
+            <div class="col text-center">
+              <h6>Om ログ</h6>
+              <p><a href="index.html#footer">Om oss</a></p>
+              <p><a href="index.html#footer">Karriär hos ログ</a></p>
+              <p><a href="index.html#footer">Policy</a></p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <h6>もしもログ</h6>
+              <p><a href="index.html#footer">私たちに関しては</a></p>
+              <p><a href="index.html#footer">でのキャリアログ</a></p>
+              <p><a href="index.html#footer">ポリシー</a></p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <h6>kontakt</h6>
+              <p>
+                <a href="mailto:tobias.larsson@medieinstitute.se">Maila oss</a>
+              </p>
+              <p>+47 070 473 14 30</p>
+              <p>Götgatan 1, 116 46 stockholm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="javascript/main.js"></script>
+  </body>
 </html>

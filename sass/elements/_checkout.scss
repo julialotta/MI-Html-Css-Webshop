@@ -5,16 +5,143 @@
   border: 1px solid $beige;
 }
 
+.product-info {
+  background-color: white;
+  padding: 80px;
+}
+
 #checkOutform {
   width: 100%;
   padding-right: 500px;
 }
 
 .container {
-  img {
+  .productimg {
     width: 100%;
     border-radius: 10%;
     box-shadow: $red 5px 5px 0px 2px;
     transition: transform 0.1s;
+
+    @include for-tablet-landscape-up {
+      width: 70%;
+    }
+  }
+
+  .klarnalogo {
+    width: 50px;
+    border-radius: 6px;
+  }
+}
+
+.avatarround {
+  opacity: 0;
+
+  @include for-tablet-landscape-up {
+    opacity: 100%;
+    background-color: #bcd5d3;
+    color: #5a6866;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.mini-container {
+  width: 80%;
+}
+
+.summary {
+  border-bottom: 1px solid #999;
+}
+
+.bg-w {
+  background-color: whitesmoke;
+}
+.iframe {
+  background-color: white;
+  border: 1px solid #e7e7e7;
+}
+.frame {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  span,
+  p {
+    margin: 0;
+  }
+  .hl {
+    background-color: black;
+    color: white;
+  }
+  .pn {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px;
+  }
+}
+
+.beige-frame {
+  background-color: #f0eeea;
+}
+
+.box-frame {
+  border: 1px solid #959391;
+  border-radius: 5px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding: 13px;
+  label {
+    position: absolute;
+    color: grey;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  input,
+  select {
+    padding: 15px;
+    padding-top: 30px;
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #959391;
+    .col-12 input {
+      border-right: 1px solid #959391;
+    }
+    .col-6 {
+      input {
+        border-right: 1px solid #959391 !important;
+      }
+    }
+  }
+  .line-right {
+    border-right: 1px solid #959391 !important;
+  }
+  .col-12,
+  .col-6 {
+    padding: 0;
+  }
+}
+
+.purchase {
+  padding: 30px;
+  text-align: right;
+  button {
+    padding: 10px;
+  }
+  .cancel {
+    background-color: white;
+  }
+  .continue {
+    background-color: #333;
+    color: white;
   }
 }
