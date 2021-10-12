@@ -291,11 +291,11 @@ h2 {
   border-radius: 15px;
 }
 
-.modal-footer .btn-danger a {
+.btn-secondary a {
   color: white;
   text-decoration: none;
 }
-.modal-footer .btn-danger a:hover {
+.btn-secondary a:hover {
   color: #422b29;
 }
 
