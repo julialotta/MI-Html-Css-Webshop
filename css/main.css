@@ -350,6 +350,23 @@ button .cups-modal {
   border-radius: 6px;
 }
 
+.blackcheck {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+.blackcheck div {
+  background-color: white;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .avatarround {
   opacity: 0;
 }
