@@ -301,6 +301,10 @@ button a {
 button a:hover {
   color: #422b29;
 }
+button .cups-modal {
+  width: 70%;
+  margin: 0 auto;
+}
 
 .btn-primary {
   color: #ede6d6;
@@ -449,4 +453,51 @@ button a:hover {
 .purchase .continue {
   background-color: #333;
   color: white;
+}
+
+.background-image {
+  display: flex;
+  background-image: url("../../assets/background-image-final.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center center;
+}
+.background-image .confirmation-container {
+  width: 80%;
+  margin: 10% auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.274);
+  justify-content: center;
+}
+.background-image .confirmation-container .confirmation-product h3 {
+  color: #422b29;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+}
+.background-image .confirmation-container .confirmation-product p {
+  margin: 10px auto;
+  padding: -10px;
+}
+.background-image .confirmation-container .confirmation-product .your-order {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .background-image .confirmation-container .confirmation-product .your-order {
+    width: 100%;
+  }
+}
+.background-image .confirmation-container .confirmation-product .your-order img {
+  width: 100%;
+}
+.background-image .confirmation-container .confirmation-product .your-order .ordered-product {
+  color: #422b29;
+  text-align: center;
+}
+.background-image .article-number {
+  padding-top: 50px;
 }
