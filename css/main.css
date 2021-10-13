@@ -77,7 +77,7 @@ header .burger .burgerline {
   display: block;
   height: 2px;
   position: relative;
-  transition: background 0.2s ease-out;
+  transition: all 0.2s ease-out;
   width: 28px;
 }
 header .burger .burgerline:before,
@@ -104,20 +104,21 @@ header .checkbox {
   max-height: 40px;
 }
 
-.checkbox:checked ~ .burger .burgerline {
-  background: transparent;
+.checkbox:checked ~ .burger .burgerline:before {
+  border-radius: 0.2rem 0.2rem 3rem 3rem;
+  height: 15px;
+  transform: rotate(-35deg);
+  width: 35px;
+  top: 0;
 }
 
-.checkbox:checked ~ .burger .burgerline:before {
-  transform: rotate(-45deg);
+.checkbox:checked ~ .burger .burgerline {
+  transform: rotate(35deg);
+  width: 24px;
 }
 
 .checkbox:checked ~ .burger .burgerline:after {
-  transform: rotate(45deg);
-}
-
-.checkbox:checked ~ .burger:not(.steps) .burgerline:before,
-.checkbox:checked ~ .burger:not(.steps) .burgerline:after {
+  transform: rotate(20deg);
   top: 0;
 }
 
