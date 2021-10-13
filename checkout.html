@@ -8,22 +8,21 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="assets/favicon.png">
     <title>ログ</title>
   </head>
   <body>
     <header class="py-1 px-3 d-flex align-items-center" id="hem">
       <input class="checkbox" type="checkbox" id="checkbox" />
-      <label class="burger justify-content-start d-md-none" for="checkbox"
-        ><span class="burgerline"></span
-      ></label>
+      <label class="burger justify-content-start d-md-none" for="checkbox">
+        <span class="burgerline"></span>
+      </label>
       <ul class="menu d-flex justify-content-around align-items-center">
         <li><a href="index.html">Hem</a></li>
         <li><a href="index.html#produkter">Nyheter</a></li>
@@ -40,8 +39,7 @@
         <i class="bi bi-cart hover"></i>
       </div>
     </header>
-
-    <div>
+    <main>
       <div class="container mini-container py-5">
         <div class="row mb-5 px-5 py-4">
           <h3 class="text-center">I din varukorg (1)</h3>
@@ -89,38 +87,23 @@
           <input type="checkbox" />
         </div>
 
-      <div class="row">
+        <div class="row">
           <h3 class="text-center">Slutför din betalning</h3>
           <div class="iframe p-4">
             <h5>Betalsätt</h5>
             <div class="frame p-md-3 mb-5">
               <div class="container-fluid">
                 <div class="row">
-                  <div
-                    class="
-                      col-10
-                      blackcheck
-                      d-flex
-                      align-items-center
-                      justify-content-center
-                    "
-                  >
-                    <div></div>
-                  </div>
+                    <div class="col-10 blackcheck d-flex align-items-center justify-content-center">
+                      <div>
+                      </div>
+                    </div>
                   <div class="col-10">
                     <p>Klarna</p>
                     <p>Säkert och smidigt</p>
                     <div class="container-fluid frame p-3">
                       <div class="row">
-                        <div
-                          class="
-                            col-1
-                            avatarround
-                            d-flex
-                            justify-content-center
-                            align-items-center
-                          "
-                        >
+                        <div class="col-1 avatarround d-flex justify-content-center align-items-center">
                           <p>ST</p>
                         </div>
                         <div class="col d-flex flex-wrap flex-column">
@@ -132,16 +115,13 @@
                             <a href="#">Läs mer</a>
                           </div>
                         </div>
-                        <div class="col-1">...</div>
+                        <div class="col-1">...
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-1">
-                    <img
-                      class="klarnalogo"
-                      src="https://www.klarna.com/assets/sites/5/2020/02/18101222/klarna-og.png"
-                      alt="Klarna payment logo"
-                    />
+                    <img class="klarnalogo" src="https://www.klarna.com/assets/sites/5/2020/02/18101222/klarna-og.png" alt="Klarna payment logo"/>
                   </div>
                 </div>
               </div>
@@ -153,7 +133,7 @@
                 <div class="row">
                   <div class="col-12">
                     <label for="customer">Handlar som</label>
-                    <select class="form-control" id="customer" required>
+                    <select class="form-control" id="customer">
                       <option>Privatkund</option>
                       <option>Företag</option>
                     </select>
@@ -161,145 +141,55 @@
                 </div>
                 <div class="row">
                   <div class="col-6">
-                    <label for="mailladress">Mejladress</label>
-                    <input
-                      class="line-right"
-                      type="email"
-                      id="mailadress"
-                      name="Handlar som"
-                      required
-                    />
+                    <label for="mailadress">Mailadress</label>
+                    <input class="line-right" type="email" id="mailadress" required/>
                   </div>
                   <div class="col-6">
                     <label for="postcode">Postnummer</label>
-                    <input
-                      type="text"
-                      id="postcode"
-                      name="Handlar som"
-                      required
-                    />
+                    <input type="number" id="postcode" required/>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <label for="personalnumber">Personummer (ÅÅMMDDXXXX)</label>
-                    <input type="text" id="personalnumber" name="Handlar som" />
+                    <label for="personalnumber">Personnummer (ÅÅÅÅMMDD)</label>
+                    <input type="date" id="personalnumber" required />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-6">
                     <label for="firstname">Förnamn</label>
-                    <input
-                      class="line-right"
-                      id="firstname"
-                      type="text"
-                      name="Handlar som"
-                      required
-                    />
+                    <input class="line-right" type="text" id="firstname" required/>
                   </div>
                   <div class="col-6">
                     <label for="lastname">Efternamn</label>
-                    <input
-                      type="text"
-                      id="lastname"
-                      name="Handlar som"
-                      required
-                    />
+                    <input type="text" id="lastname" required/>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12">
                     <label for="address">Adress</label>
-                    <input
-                      type="text"
-                      id="address"
-                      name="Handlar som"
-                      required
-                    />
+                    <input type="text" id="address" name="Handlar som" required/>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-6">
                     <label for="suburb">Ort</label>
-                    <input
-                      class="line-right"
-                      id="suburb"
-                      type="text"
-                      name="Handlar som"
-                      required
-                    />
+                    <input class="line-right" id="suburb" type="text" name="Handlar som" required/>
                   </div>
                   <div class="col-6">
                     <label for="phonenumber">Telefonnummer</label>
-                    <input
-                      type="text"
-                      id="phonenumber"
-                      name="Handlar som"
-                      required
-                    />
+                    <input type="number" id="phonenumber" name="Handlar som" required/>
                   </div>
                 </div>
               </div>
               <div class="purchase">
-                <button type="button" class="cancel">Avbryt</button>
-                <button class="continue">
-                  <a href="orderconfirmation.html">Fortsätt</a>
-                </button>
+                <button type="submit" class="continue">Lägg order</button>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- <form id="checkoutForm">
-                  <div class="row">
-                    <div class="col pt-1">
-                      <label for="exampleFormControlInput1">Förnamn</label>
-                      <input type="text" class="form-control" placeholder="Förnamn" required>
-                    </div>
-                    <div class="col py-1">
-                      <label for="exampleFormControlInput1">Efternamn</label>
-                      <input type="text" class="form-control" placeholder="Efternamn" required>
-                    </div>
-                  </div>
-                  <div class="col py-1">
-                    <label for="exampleFormControlInput1">Födelsedatum</label>
-                  <input type="date" class="form-control" placeholder="Födelsedatum" required>
-      
-      
-                  <div class="form-group py-1">
-                    <label for="exampleFormControlInput1">E-post</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-post" required>
-                  </div>
-                  <div class="form-group py-1">
-                    <label for="exampleFormControlInput1">Adress</label>
-                    <input type="adress" class="form-control" id="exampleFormControlInput1" placeholder="Adress" required>
-                  </div>
-                  <div class="form-group py-1">
-                    <label for="exampleFormControlInput1">Postkod</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Postkod" required>
-                  </div>
-      
-                  
-                  <div class="form-group py-1">
-                    <label for="exampleFormControlSelect1">Antal</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-      
-                  <div class="form-group py-1">
-                    <label for="exampleFormControlTextarea1">Övrigt </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary my-5 ">Lägg beställning</button>
-                </form> -->
-
+    </main>
     <footer id="kontakt">
       <div class="footer-background">
         <div class="footer-background container py-4">
@@ -318,12 +208,10 @@
             </div>
             <div class="col-12 col-md-4 text-center">
               <h6>kontakt</h6>
-              <p>
-                <a href="mailto:tobias.larsson@medieinstitute.se">Maila oss</a>
-              </p>
+              <p><a href="mailto:tobias.larsson@medieinstitute.se">Maila oss</a></p>
               <p>+47 070 473 14 30</p>
               <p>Götgatan 1, 116 46 stockholm</p>
-            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -333,8 +221,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
 
     <script src="javascript/main.js"></script>
   </body>
