@@ -587,7 +587,7 @@ form {
   }
 } */
 .background-image {
-  height: 100vh;
+  height: 100%;
   background-image: url("../../assets/background-image-final.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -618,6 +618,21 @@ form {
 .background-image .orderinformation-container {
   background-color: white;
   height: 100%;
+}
+.background-image .orderinformation-container table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 30px;
+}
+.background-image .orderinformation-container table th {
+  margin: 20px;
+  padding: 20px;
+}
+.background-image .orderinformation-container table td {
+  margin: 20px;
+  padding: 10px;
 }
 .background-image .ordernumber {
   background-color: white;
