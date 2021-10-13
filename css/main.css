@@ -498,8 +498,74 @@ h2 {
   width: max-content;
 }
 
-.background-image {
+/* .background-image {
   height: 100%;
+  background-image: url("../../assets/background-image-final.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center center;
+
+  .confirmation-container {
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 20px;
+
+    @include for-phone-only {
+      width: 90%;
+    }
+
+    .confirmation-header {
+      border: 10px solid $red;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.24);
+    }
+
+    .confirmation-product {
+      h3 {
+        color: $brown;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: block;
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        margin: 10px auto;
+        padding: -10px;
+        color: $brown;
+      }
+    }
+  }
+
+  .ordernumber {
+    text-decoration: 2px underline;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10px;
+    color: $brown;
+  }
+
+  .customer-information {
+    border: 10px solid $red;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.24);
+
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding: 5px;
+    color: $brown;
+  }
+
+  h4,
+  h6 {
+    text-align: center;
+    color: $brown;
+  }
+} */
+.background-image {
+  height: 100vh;
   background-image: url("../../assets/background-image-final.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -508,7 +574,6 @@ h2 {
 .background-image .confirmation-container {
   width: 50%;
   margin: 5% auto;
-  border-radius: 20px;
 }
 @media (max-width: 576px) {
   .background-image .confirmation-container {
@@ -516,66 +581,31 @@ h2 {
   }
 }
 .background-image .confirmation-container .confirmation-header {
-  border: 10px solid #f98b6d;
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.24);
-}
-.background-image .confirmation-container .confirmation-product {
-  /*      .your-order {
-    @include for-phone-only {
-      width: 70%;
-      margin: 10px;
-    }
-    width: 50%;
-    margin: 0 auto;
-
-    img {
-      width: 100%;
-    }
-    .ordered-product {
-      width: 150px;
-      padding-right: 10px;
-      color: $brown;
-    }
-  }
-  .article-number,
-  .article-color {
-    width: 10%;
-  } */
-}
-.background-image .confirmation-container .confirmation-product h3 {
-  color: #422b29;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  display: block;
-  text-decoration: underline;
+  background-color: #422b29;
+  width: 100%;
+  height: 200px;
+  padding: 10% 10% 10% 10%;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.24);
+  color: #ede6d6;
   text-align: center;
 }
-.background-image .confirmation-container .confirmation-product p {
-  margin: 10px auto;
-  padding: -10px;
-  color: #422b29;
+.background-image .confirmation-container .confirmation-header h3 {
+  color: #f98b6d;
+  text-decoration: underline;
+}
+.background-image .orderinformation-container {
+  background-color: white;
+  height: 100%;
 }
 .background-image .ordernumber {
-  text-decoration: 2px underline;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  padding: 5% 5% 5% 5%;
   font-size: 2em;
-  padding: 10px;
-  margin-top: 10px;
-  color: #422b29;
+  text-align: center;
 }
 .background-image .customer-information {
-  border: 10px solid #f98b6d;
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.24);
-  margin-bottom: 20px;
-  margin-top: -10px;
-  padding: 5px;
-  color: #422b29;
-}
-.background-image h4,
-.background-image h6 {
-  text-align: center;
-  color: #422b29;
+  width: 100%;
+  margin-bottom: 50px;
 }
