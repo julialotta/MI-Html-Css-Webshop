@@ -48,26 +48,33 @@ h2 {
   .desc {
     padding-bottom: 20px;
     padding-top: 5px;
+
     button {
       background-color: $red;
       color: white;
+      border: white 1px solid;
       justify-content: end;
-      border: none;
       border-radius: 15px;
     }
     button:hover {
-      color: $brown;
+      border: $red 1px solid;
+      background-color: white;
+      color: $red;
     }
   }
 }
 
-button {
+.modal-footer {
   a {
+    border: white 1px solid;
+    background-color: $red;
     color: white;
     text-decoration: none;
   }
   a:hover {
-    color: $brown;
+    border: $red 1px solid;
+    background-color: white;
+    color: $red;
   }
   .cups-modal {
     width: 70%;

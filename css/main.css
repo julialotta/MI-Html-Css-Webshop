@@ -305,24 +305,55 @@ h2 {
 .product-wrap .desc button {
   background-color: #f98b6d;
   color: white;
+  border: white 1px solid;
   justify-content: end;
-  border: none;
   border-radius: 15px;
 }
 .product-wrap .desc button:hover {
-  color: #422b29;
+  border: #f98b6d 1px solid;
+  background-color: white;
+  color: #f98b6d;
 }
 
-button a {
+.modal-footer a {
+  border: white 1px solid;
+  background-color: #f98b6d;
   color: white;
   text-decoration: none;
 }
-button a:hover {
-  color: #422b29;
+.modal-footer a:hover {
+  border: #f98b6d 1px solid;
+  background-color: white;
+  color: #f98b6d;
 }
-button .cups-modal {
+.modal-footer .cups-modal {
   width: 70%;
   margin: 0 auto;
+}
+
+.btn-primary {
+  color: #ede6d6;
+  background-color: #422b29 !important;
+  border: 1px solid #ede6d6;
+}
+
+.product-info {
+  background-color: white;
+  padding: 80px;
+}
+
+form {
+  padding: 30px !important;
+}
+@media (max-width: 576px) {
+  form {
+    padding: 0px !important;
+  }
+}
+
+#checkOutform {
+  width: 100%;
+  padding-right: 500px;
 }
 
 .container .productimg {
@@ -337,22 +368,13 @@ button .cups-modal {
   }
 }
 .container .klarnalogo {
-  width: 0;
+  width: 50px;
+  border-radius: 6px;
+  display: none;
 }
 @media (min-width: 768px) {
   .container .klarnalogo {
-    opacity: 100%;
-    width: 50px;
-    border-radius: 6px;
-  }
-}
-
-.container-fluid:nth-child(3) {
-  font-size: 8px;
-}
-@media (min-width: 768px) {
-  .container-fluid:nth-child(3) {
-    font-size: 15px;
+    display: block;
   }
 }
 
@@ -413,8 +435,14 @@ button .cups-modal {
 }
 
 .frame {
+  flex-wrap: wrap;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .frame {
+    padding: 0;
+  }
 }
 .frame span,
 .frame p {
