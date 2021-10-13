@@ -1,27 +1,3 @@
-.btn-primary {
-  // Ta bort i mobil-läge
-  color: $beige;
-  background-color: $brown !important;
-  border: 1px solid $beige;
-}
-
-.product-info {
-  background-color: white;
-  padding: 80px;
-}
-
-#checkOutform {
-  width: 100%;
-  padding-right: 500px;
-}
-
-.container-fluid:nth-child(3) {
-  font-size: 8px;
-  @include for-tablet-landscape-up {
-    font-size: 15px;
-  }
-}
-
 .container {
   .productimg {
     width: 100%;
@@ -42,6 +18,13 @@
       width: 50px;
       border-radius: 6px;
     }
+  }
+}
+
+.container-fluid:nth-child(3) {
+  font-size: 8px;
+  @include for-tablet-landscape-up {
+    font-size: 15px;
   }
 }
 
@@ -172,13 +155,10 @@
   button {
     padding: 10px;
   }
-  .cancel {
-    background-color: white;
-    width: 80px;
-  }
+
   .continue {
     background-color: #333;
     color: white;
-    width: 80px;
+    width: max-content;
   }
 }
