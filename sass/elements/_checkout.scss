@@ -30,7 +30,7 @@ form {
     transition: transform 0.1s;
 
     @include for-tablet-landscape-up {
-      width: 70%;
+      width: 100% !important;
     }
   }
 
@@ -85,6 +85,9 @@ form {
 .mini-container {
   width: 80%;
   margin: auto;
+  @include for-phone-only {
+    width: 98% !important;
+  }
 }
 
 .summary {
