@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btn-primary {
   // Ta bort i mobil-läge
   color: $beige;
@@ -22,6 +23,8 @@ form {
   padding-right: 500px;
 }
 
+=======
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
 .container {
   .productimg {
     width: 100%;
@@ -35,12 +38,29 @@ form {
   }
 
   .klarnalogo {
+<<<<<<< HEAD
     width: 50px;
     border-radius: 6px;
     display: none;
     @include for-tablet-landscape-up {
       display: block;
     }
+=======
+    width: 0;
+
+    @include for-tablet-landscape-up {
+      opacity: 100%;
+      width: 50px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.container-fluid:nth-child(3) {
+  font-size: 8px;
+  @include for-tablet-landscape-up {
+    font-size: 15px;
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
   }
 }
 
@@ -122,6 +142,10 @@ form {
 
 .beige-frame {
   background-color: #f0eeea;
+  width: fit-content;
+  p {
+    font-size: 15px;
+  }
 }
 
 .box-frame {
@@ -171,11 +195,10 @@ form {
   button {
     padding: 10px;
   }
-  .cancel {
-    background-color: white;
-  }
+
   .continue {
     background-color: #333;
     color: white;
+    width: max-content;
   }
 }

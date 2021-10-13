@@ -388,6 +388,7 @@ button .cups-modal {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .btn-primary {
   color: #ede6d6;
   background-color: #422b29 !important;
@@ -414,6 +415,8 @@ form {
   padding-right: 500px;
 }
 
+=======
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
 .container .productimg {
   width: 100%;
   border-radius: 10%;
@@ -432,6 +435,7 @@ form {
 }
 
 .container .klarnalogo {
+<<<<<<< HEAD
   width: 50px;
   border-radius: 6px;
   display: none;
@@ -440,6 +444,24 @@ form {
 @media (min-width: 768px) {
   .container .klarnalogo {
     display: block;
+=======
+  width: 0;
+}
+@media (min-width: 768px) {
+  .container .klarnalogo {
+    opacity: 100%;
+    width: 50px;
+    border-radius: 6px;
+  }
+}
+
+.container-fluid:nth-child(3) {
+  font-size: 8px;
+}
+@media (min-width: 768px) {
+  .container-fluid:nth-child(3) {
+    font-size: 15px;
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
   }
 }
 
@@ -532,6 +554,10 @@ form {
 
 .beige-frame {
   background-color: #f0eeea;
+  width: fit-content;
+}
+.beige-frame p {
+  font-size: 15px;
 }
 
 .box-frame {
@@ -589,20 +615,94 @@ form {
 .purchase button {
   padding: 10px;
 }
+<<<<<<< HEAD
 
 .purchase .cancel {
   background-color: white;
 }
 
+=======
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
 .purchase .continue {
   background-color: #333;
   color: white;
+  width: max-content;
 }
 
+/* .background-image {
+  height: 100%;
+  background-image: url("../../assets/background-image-final.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: center center;
+
+  .confirmation-container {
+    width: 50%;
+    margin: 5% auto;
+    border-radius: 20px;
+
+    @include for-phone-only {
+      width: 90%;
+    }
+
+    .confirmation-header {
+      border: 10px solid $red;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.24);
+    }
+
+    .confirmation-product {
+      h3 {
+        color: $brown;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: block;
+        text-decoration: underline;
+        text-align: center;
+      }
+      p {
+        margin: 10px auto;
+        padding: -10px;
+        color: $brown;
+      }
+    }
+  }
+
+  .ordernumber {
+    text-decoration: 2px underline;
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 10px;
+    color: $brown;
+  }
+
+  .customer-information {
+    border: 10px solid $red;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.24);
+
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding: 5px;
+    color: $brown;
+  }
+
+  h4,
+  h6 {
+    text-align: center;
+    color: $brown;
+  }
+} */
 .background-image {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+=======
+  height: 100vh;
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
   background-image: url("../../assets/background-image-final.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -610,6 +710,7 @@ form {
 }
 
 .background-image .confirmation-container {
+<<<<<<< HEAD
   width: 80%;
   margin: 10% auto;
   border-radius: 10px;
@@ -636,19 +737,32 @@ form {
 }
 
 .background-image .confirmation-container .confirmation-product .your-order {
+=======
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
   width: 50%;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 @media (max-width: 576px) {
-  .background-image .confirmation-container .confirmation-product .your-order {
-    width: 100%;
+  .background-image .confirmation-container {
+    width: 90%;
   }
 }
+<<<<<<< HEAD
 
 .background-image .confirmation-container .confirmation-product .your-order img {
+=======
+.background-image .confirmation-container .confirmation-header {
+  background-color: #422b29;
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
   width: 100%;
+  height: 200px;
+  padding: 10% 10% 10% 10%;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.24);
+  color: #ede6d6;
+  text-align: center;
 }
+<<<<<<< HEAD
 
 .background-image .confirmation-container .confirmation-product .your-order .ordered-product {
   color: #422b29;
@@ -659,3 +773,25 @@ form {
   padding-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
+=======
+.background-image .confirmation-container .confirmation-header h3 {
+  color: #f98b6d;
+  text-decoration: underline;
+}
+.background-image .orderinformation-container {
+  background-color: white;
+  height: 100%;
+}
+.background-image .ordernumber {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  padding: 5% 5% 5% 5%;
+  font-size: 2em;
+  text-align: center;
+}
+.background-image .customer-information {
+  width: 100%;
+  margin-bottom: 50px;
+}
+>>>>>>> 61e5ed8f1a239bf8055f8e9e8a4fd5de316fd795
