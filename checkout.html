@@ -55,9 +55,14 @@
                   <span>I lager</span>
                   <b>Kaffekask</b>
                   <p>Beige kopp i keramik</p>
-                  <input type="number" />
+                  <select class="form-select" name="amount">
+                    <option value="volvo">1</option>
+                    <option value="saab">2</option>
+                    <option value="mercedes">3</option>
+                    <option value="audi">4</option>
+                  </select>
                 </div>
-                <div class="pt-4 col d-flex justify-content-end">
+                <div class="pt-4 col d-flex flex-column text-end">
                   <i class="bi bi-x-circle"></i>
                   <i class="bi bi-heart"></i>
                 </div>
@@ -69,13 +74,17 @@
           <div class="col-6">Produkter</div>
           <div class="col-6 d-flex justify-content-end">598 SEK</div>
         </div>
-        <div class="row">
+        <div class="row mb-2">
           <div class="col-6">Frakt</div>
           <div class="col-6 d-flex justify-content-end">29 SEK</div>
         </div>
         <div class="row">
-          <div class="col-6">ATT BETALA</div>
-          <div class="col-6 d-flex justify-content-end">627 SEK</div>
+          <div class="col-6">
+            <blockquote class="blockquote">ATT BETALA</blockquote>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <blockquote class="blockquote">627 SEK</blockquote>
+          </div>
         </div>
         <div class="row mini-container text-center py-5">
           <h3 class="text-center">Få senaste nyheterna!</h3>
@@ -90,7 +99,7 @@
         </div>
 
         <div class="row">
-          <h3 class="text-center">Slutför din betalning</h3>
+          <h3 class="text-center mb-4">Slutför din betalning</h3>
           <div class="iframe p-4">
             <h5>Betalsätt</h5>
             <div class="frame p-md-3 mb-5">
