@@ -35,8 +35,13 @@ header .hover:hover {
 
 i {
   color: #f98b6d;
-  font-size: 25px;
-  padding-right: 15px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  i {
+    font-size: 25px;
+  }
 }
 
 footer h6 {
@@ -70,7 +75,6 @@ footer .footer-background {
 
 header .burger {
   cursor: pointer;
-  padding-left: 10px;
 }
 header .burger .burgerline {
   background: #f98b6d;
