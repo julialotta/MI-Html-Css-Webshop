@@ -85,6 +85,9 @@ form {
 .mini-container {
   width: 80%;
   margin: auto;
+  @include for-phone-only {
+    width: 98% !important;
+  }
 }
 
 .summary {
