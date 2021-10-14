@@ -1,7 +1,9 @@
 .confirmation-container {
+  width: 90%;
   margin: 5% auto;
-  @include for-phone-only {
-    width: 90%;
+
+  @include for-tablet-landscape-up {
+    margin: 15%;
   }
 
   .confirmation-header {
