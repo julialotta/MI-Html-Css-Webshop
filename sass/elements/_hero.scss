@@ -15,24 +15,24 @@
     @include for-tablet-landscape-up {
       font-size: 3em;
     }
-
     @include for-desktop-up {
       font-size: 4em;
     }
+
     h1 {
       text-shadow: 5px 5px 10px $brown;
-      font-size: 1.3em; //Görs mindre vid mobil-läge
+      font-size: 1.3em;
     }
+
     p {
       color: $beige;
       text-shadow: 5px 5px 10px $brown;
-      font-size: 0.9em; //Görs mindre vid mobil-läge
+      font-size: 0.9em;
     }
   }
 
   .btn-secondary {
     opacity: 0;
-
     @include for-tablet-landscape-up {
       opacity: 100%;
       color: $beige;
