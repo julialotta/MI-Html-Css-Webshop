@@ -549,7 +549,7 @@ form {
 }
 @media (min-width: 992px) {
   .confirmation-container {
-    margin: 5% 25%;
+    margin: 15% 25%;
   }
 }
 .confirmation-container .confirmation-header {
