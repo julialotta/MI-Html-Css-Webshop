@@ -1,9 +1,13 @@
 .confirmation-container {
   width: 90%;
-  margin: 5% auto;
+  margin: 10%;
 
   @include for-tablet-landscape-up {
     margin: 15%;
+  }
+
+  @include for-desktop-up {
+    margin: 5% 25%;
   }
 
   .confirmation-header {
