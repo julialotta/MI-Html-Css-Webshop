@@ -539,11 +539,12 @@ form {
 }
 
 .confirmation-container {
+  width: 90%;
   margin: 5% auto;
 }
-@media (max-width: 576px) {
+@media (min-width: 768px) {
   .confirmation-container {
-    width: 90%;
+    margin: 15%;
   }
 }
 .confirmation-container .confirmation-header {
