@@ -538,22 +538,15 @@ form {
   width: max-content;
 }
 
-.background-image {
-  height: 100%;
-  background-image: url("../../assets/background-image-final.jpg");
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center center;
-}
-.background-image .confirmation-container {
+.confirmation-container {
   margin: 5% auto;
 }
 @media (max-width: 576px) {
-  .background-image .confirmation-container {
+  .confirmation-container {
     width: 90%;
   }
 }
-.background-image .confirmation-container .confirmation-header {
+.confirmation-container .confirmation-header {
   background-color: #422b29;
   width: 100%;
   height: 100%;
@@ -562,16 +555,17 @@ form {
   box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.24);
   text-align: center;
 }
-.background-image .confirmation-container .confirmation-header h3 {
+.confirmation-container .confirmation-header h3 {
   color: #f98b6d;
   text-decoration: underline;
   padding-bottom: 10px;
 }
-.background-image .confirmation-container .confirmation-header h6 {
+.confirmation-container .confirmation-header h6 {
   color: #ede6d6;
   padding-bottom: 10px;
 }
-.background-image .orderinformation-container {
+
+.orderinformation-container {
   background-color: #422b29;
   box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.24);
   border-radius: 0 60px 0 30px;
@@ -579,17 +573,16 @@ form {
   color: #ede6d6;
   padding-bottom: 50px;
 }
-.background-image .orderinformation-container .ordernumber {
+.orderinformation-container .ordernumber {
   margin-top: 10px;
 }
-.background-image .orderinformation-container .ordered-product-info {
+.orderinformation-container .ordered-product-info {
   padding: 10px 30px 30px 30px;
   display: flex;
   flex-direction: row;
-  text-align: right center;
   justify-content: center;
 }
-.background-image .orderinformation-container .ordered-product {
+.orderinformation-container .ordered-product {
   display: flex;
   flex-direction: column;
   width: 100px;
@@ -597,20 +590,20 @@ form {
   justify-content: center;
   margin-right: 10px;
 }
-.background-image .orderinformation-container table {
+.orderinformation-container table {
   width: 10%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
-.background-image .orderinformation-container h3 {
+.orderinformation-container h3 {
   text-align: center;
   text-decoration: underline;
   margin-bottom: 20px;
 }
-.background-image .orderinformation-container h5 {
+.orderinformation-container h5 {
   color: #f98b6d;
 }
-.background-image .orderinformation-container th {
+.orderinformation-container th {
   text-decoration: underline;
   display: flex;
   flex-direction: column;
@@ -618,13 +611,14 @@ form {
   margin-bottom: 5px;
   color: #f98b6d;
 }
-.background-image .orderinformation-container td {
+.orderinformation-container td {
   display: flex;
   flex-direction: column;
   font-size: 1em;
   justify-content: center;
 }
-.background-image .ordernumber {
+
+.ordernumber {
   width: 100%;
   height: 100px;
   padding: 5% 5% 5% 5%;
@@ -632,7 +626,8 @@ form {
   font-size: 2em;
   text-align: center;
 }
-.background-image .customer-information {
+
+.customer-information {
   width: 100%;
   margin-bottom: 50px;
 }
