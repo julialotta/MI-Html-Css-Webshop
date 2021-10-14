@@ -34,6 +34,14 @@ form {
     }
   }
 
+  .smalltext {
+    font-size: 9px;
+
+    @include for-tablet-landscape-up {
+      font-size: 15px;
+    }
+  }
+
   .klarnalogo {
     width: 50px;
     border-radius: 6px;

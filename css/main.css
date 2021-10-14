@@ -372,6 +372,14 @@ form {
     width: 100% !important;
   }
 }
+.container .smalltext {
+  font-size: 9px;
+}
+@media (min-width: 768px) {
+  .container .smalltext {
+    font-size: 15px;
+  }
+}
 .container .klarnalogo {
   width: 50px;
   border-radius: 6px;
