@@ -159,7 +159,7 @@ a:hover {
 }
 
 .hero-image {
-  background-image: url("../../assets/yunomi-workshop-hero-image3-cropped.jpg");
+  background-image: url("../assets/yunomi-workshop-hero-image3-cropped.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -262,7 +262,7 @@ aside ul li p {
 
 .background-image {
   display: flex;
-  background-image: url("../../assets/background-image-final.jpg");
+  background-image: url("../assets/background-image-final.jpg");
   height: 100%;
   background-size: cover;
   background-repeat: repeat-y;
