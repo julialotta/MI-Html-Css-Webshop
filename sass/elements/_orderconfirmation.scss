@@ -3,11 +3,12 @@
   margin: 10%;
 
   @include for-tablet-landscape-up {
-    margin: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
   @include for-desktop-up {
-    margin: 15% 25%;
+    margin-bottom: 15%;
   }
 
   .confirmation-header {
